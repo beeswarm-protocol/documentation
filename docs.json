@@ -30,7 +30,9 @@
       {
         "group": "Swarm",
         "icon": "honey-pot",
-        "pages": []
+        "pages": [
+          "soon"
+        ]
       }
     ]
   },
