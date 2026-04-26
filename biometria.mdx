@@ -1,0 +1,53 @@
+---
+description: "Como configurar o Face ID e Touch ID na BeeSwarm."
+title: "Biometria"
+icon: "fingerprint"
+---
+
+🔐 A BeeSwarm utiliza a autenticação biométrica do seu dispositivo para proteger o acesso à sua carteira. O fluxo pode variar conforme o gerenciador de senhas configurado no seu celular.
+
+## iOS
+
+**Configuração recomendada: app Senhas (nativo da Apple)**
+
+Para que a biometria funcione corretamente na BeeSwarm, recomendamos utilizar o app **Senhas** nativo do iOS como gerenciador padrão.
+
+<Frame>
+  <img
+    src="https://media.beeswarm.app/password-app.png"
+    alt="App Senhas iOS"
+    className="mr-auto"
+    style={{ width:"29%" }}
+  />
+</Frame>
+
+Para verificar ou alterar o gerenciador ativo:
+
+1. Abra as **Configurações** do iPhone
+2. Acesse **Senhas → Opções de Senhas**
+3. Em **Preencher automaticamente com**, selecione **Senhas** (ícone da Apple)
+
+<Warning>
+  Se outro app estiver selecionado (como Bitwarden, Google Password Manager ou similar), a autenticação biométrica da BeeSwarm pode ser redirecionada para esse gerenciador. Troque para o app Senhas para garantir o funcionamento correto.
+</Warning>
+
+Após ajustar a configuração, volte ao app e ative a biometria normalmente.
+
+## Android
+
+No Android, o gerenciador utilizado geralmente é o **Google Password Manager**, integrado ao sistema. Na maioria dos dispositivos, nenhuma configuração adicional é necessária.
+
+<Frame>
+  <img
+    src="https://media.beeswarm.app/password-manager.png"
+    alt="App Senhas iOS"
+    className="mr-auto"
+    style={{ width:"29%" }}
+  />
+</Frame>
+
+Se a biometria não for acionada automaticamente, verifique nas configurações do seu dispositivo qual gerenciador de senhas está ativo e certifique-se de que a opção de preenchimento automático está habilitada.
+
+---
+
+Dúvidas? Entre em contato: [contact@beeswarm.app](mailto:contact@beeswarm.app)

@@ -11,7 +11,7 @@
         "group": "Visão Geral",
         "icon": "book-open-cover",
         "pages": [
-          "untitled-page"
+          "introducao"
         ]
       },
       {
@@ -24,7 +24,14 @@
           "seguranca",
           "conectar-com-dapps",
           "redes-suportadas",
-          "faq"
+          "faq",
+          {
+            "group": "Extras",
+            "icon": "sunglasses",
+            "pages": [
+              "biometria"
+            ]
+          }
         ]
       },
       {
