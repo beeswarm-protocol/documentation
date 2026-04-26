@@ -1,33 +1,21 @@
 {
-  "name": "BeeSwarm",
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
+  "name": "Documentation",
+  "colors": {
+    "primary": "#0D9373"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": []
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#F5A623"
-  },
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentação",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "primeiros-passos",
-              "seguranca",
-              "enviar-e-receber",
-              "conectar-com-dapps",
-              "redes-suportadas",
-              "faq"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "favicon": "/favicon.svg"
 }
