@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "BeeSwarm",
+  "name": "BeeSwarm Docs",
   "colors": {
     "primary": "#F5A623"
   },
@@ -22,9 +22,22 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+  "favicon": "/images/icon-192x192.png",
+  "description": "Everything you need to start using BeeSwarm",
+  "logo": "/images/icon-192x192.png",
+  "appearance": {
+    "strict": true
   },
-  "favicon": "/favicon.svg"
+  "navbar": {
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://beeswarma.app"
+      },
+      {
+        "label": "App",
+        "href": "https://mobile.beeswarma.app"
+      }
+    ]
+  }
 }
