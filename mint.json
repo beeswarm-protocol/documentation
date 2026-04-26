@@ -11,7 +11,7 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "primeiros-passos"]
+      "pages": ["introduction", "primeiros-passos", "seguranca"]
     }
   ]
 }
