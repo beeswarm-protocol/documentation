@@ -1,15 +1,23 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Documentation",
+  "name": "BeeSwarm",
   "colors": {
-    "primary": "#0D9373"
+    "primary": "#F5A623"
   },
   "navigation": {
     "groups": [
       {
         "group": "Getting Started",
-        "pages": []
+        "pages": [
+          "introduction",
+          "primeiros-passos",
+          "seguranca",
+          "enviar-e-receber",
+          "conectar-com-dapps",
+          "redes-suportadas",
+          "faq"
+        ]
       }
     ]
   },
