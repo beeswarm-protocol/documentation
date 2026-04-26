@@ -9,6 +9,7 @@
     "groups": [
       {
         "group": "Getting Started",
+        "icon": "bee",
         "pages": [
           "introduction",
           "primeiros-passos",
