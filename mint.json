@@ -11,7 +11,14 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages": ["introduction", "primeiros-passos", "seguranca"]
+      "pages": [
+        "introduction",
+        "primeiros-passos",
+        "seguranca",
+        "enviar-e-receber",
+        "conectar-com-dapps",
+        "redes-suportadas"
+      ]
     }
   ]
 }
