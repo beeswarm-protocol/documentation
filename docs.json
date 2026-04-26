@@ -9,18 +9,25 @@
   "colors": {
     "primary": "#F5A623"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "primeiros-passos",
-        "seguranca",
-        "enviar-e-receber",
-        "conectar-com-dapps",
-        "redes-suportadas",
-        "faq"
-      ]
-    }
-  ]
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentação",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "primeiros-passos",
+              "seguranca",
+              "enviar-e-receber",
+              "conectar-com-dapps",
+              "redes-suportadas",
+              "faq"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
