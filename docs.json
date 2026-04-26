@@ -8,17 +8,29 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting Started",
-        "icon": "bee",
+        "group": "Visão Geral",
+        "icon": "book-open-cover",
+        "pages": [
+          "untitled-page"
+        ]
+      },
+      {
+        "group": "Carteira",
+        "icon": "wallet",
         "pages": [
           "introduction",
           "primeiros-passos",
-          "seguranca",
           "enviar-e-receber",
+          "seguranca",
           "conectar-com-dapps",
           "redes-suportadas",
           "faq"
         ]
+      },
+      {
+        "group": "Swarm",
+        "icon": "honey-pot",
+        "pages": []
       }
     ]
   },
