@@ -85,6 +85,45 @@
             ]
           }
         ]
+      },
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "book-open-cover",
+            "pages": [
+              "en/introducao"
+            ]
+          },
+          {
+            "group": "Wallet",
+            "icon": "wallet",
+            "pages": [
+              "en/introduction",
+              "en/getting-started",
+              "en/send-and-receive",
+              "en/security",
+              "en/connect-with-dapps",
+              "en/supported-networks",
+              "en/faq",
+              {
+                "group": "Extras",
+                "icon": "sunglasses",
+                "pages": [
+                  "en/biometrics"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Swarm",
+            "icon": "honey-pot",
+            "pages": [
+              "en/soon"
+            ]
+          }
+        ]
       }
     ]
   },
