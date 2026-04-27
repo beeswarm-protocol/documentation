@@ -44,6 +44,14 @@
             "pages": [
               "pt/soon"
             ]
+          },
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "pt/termos-de-uso",
+              "pt/politica-de-privacidade"
+            ]
           }
         ]
       },
