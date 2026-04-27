@@ -6,39 +6,84 @@
     "primary": "#F5A623"
   },
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Visão Geral",
-        "icon": "book-open-cover",
-        "pages": [
-          "introducao"
-        ]
-      },
-      {
-        "group": "Carteira",
-        "icon": "wallet",
-        "pages": [
-          "introduction",
-          "primeiros-passos",
-          "enviar-e-receber",
-          "seguranca",
-          "conectar-com-dapps",
-          "redes-suportadas",
-          "faq",
+        "language": "pt",
+        "default": true,
+        "groups": [
           {
-            "group": "Extras",
-            "icon": "sunglasses",
+            "group": "Visão Geral",
+            "icon": "book-open-cover",
             "pages": [
-              "biometria"
+              "pt/introducao"
+            ]
+          },
+          {
+            "group": "Carteira",
+            "icon": "wallet",
+            "pages": [
+              "pt/introduction",
+              "pt/primeiros-passos",
+              "pt/enviar-e-receber",
+              "pt/seguranca",
+              "pt/conectar-com-dapps",
+              "pt/redes-suportadas",
+              "pt/faq",
+              {
+                "group": "Extras",
+                "icon": "sunglasses",
+                "pages": [
+                  "pt/biometria"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Swarm",
+            "icon": "honey-pot",
+            "pages": [
+              "pt/soon"
             ]
           }
         ]
       },
       {
-        "group": "Swarm",
-        "icon": "honey-pot",
-        "pages": [
-          "soon"
+        "language": "es",
+        "groups": [
+          {
+            "group": "Visión General",
+            "icon": "book-open-cover",
+            "pages": [
+              "es/introducao"
+            ]
+          },
+          {
+            "group": "Wallet",
+            "icon": "wallet",
+            "pages": [
+              "es/introduction",
+              "es/primeros-pasos",
+              "es/enviar-y-recibir",
+              "es/seguridad",
+              "es/conectar-con-dapps",
+              "es/redes-soportadas",
+              "es/faq",
+              {
+                "group": "Extras",
+                "icon": "sunglasses",
+                "pages": [
+                  "es/biometria"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Swarm",
+            "icon": "honey-pot",
+            "pages": [
+              "es/soon"
+            ]
+          }
         ]
       }
     ]
