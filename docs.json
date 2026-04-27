@@ -140,8 +140,20 @@
         "href": "https://beeswarm.app"
       },
       {
-        "label": "App",
+        "label": "Application",
         "href": "https://mobile.beeswarm.app"
+      },
+      {
+        "label": "Twitter/X",
+        "href": "https://x.com/beeswarmapp"
+      },
+      {
+        "label": "Telegram",
+        "href": "https://t.me/BeeSwarmApp"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/beeswarm.app"
       }
     ]
   }
