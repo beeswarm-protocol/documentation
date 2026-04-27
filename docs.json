@@ -91,6 +91,14 @@
             "pages": [
               "es/soon"
             ]
+          },
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "es/terminos-de-uso",
+              "es/politica-de-privacidad"
+            ]
           }
         ]
       },
@@ -129,6 +137,14 @@
             "icon": "honey-pot",
             "pages": [
               "en/soon"
+            ]
+          },
+          {
+            "group": "Legal",
+            "icon": "scale-balanced",
+            "pages": [
+              "en/terms-of-use",
+              "en/privacy-policy"
             ]
           }
         ]
