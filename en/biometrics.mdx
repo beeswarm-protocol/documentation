@@ -1,0 +1,53 @@
+---
+description: "How to set up Face ID and Touch ID on BeeSwarm."
+title: "Biometrics"
+icon: "fingerprint"
+---
+
+🔐 BeeSwarm uses your device's biometric authentication to protect access to your wallet. The flow may vary depending on the password manager configured on your phone.
+
+## iOS
+
+**Recommended setup: Passwords app (Apple's native)**
+
+For biometrics to work correctly on BeeSwarm, we recommend using the native iOS **Passwords** app as your default manager.
+
+<Frame>
+  <img
+    src="https://media.beeswarm.app/password-app.png"
+    alt="iOS Passwords app"
+    className="mr-auto"
+    style={{ width:"29%" }}
+  />
+</Frame>
+
+To check or change the active manager:
+
+1. Open **Settings** on your iPhone
+2. Go to **Passwords → Password Options**
+3. Under **AutoFill from**, select **Passwords** (Apple icon)
+
+<Warning>
+  If another app is selected (such as Bitwarden, Google Password Manager, or similar), BeeSwarm's biometric authentication may be redirected to that manager. Switch to the Passwords app to ensure correct behavior.
+</Warning>
+
+After adjusting the setting, return to the app and enable biometrics normally.
+
+## Android
+
+On Android, the manager used is generally **Google Password Manager**, integrated into the system. On most devices no extra configuration is required.
+
+<Frame>
+  <img
+    src="https://media.beeswarm.app/password-manager.png"
+    alt="Android password app"
+    className="mr-auto"
+    style={{ width:"29%" }}
+  />
+</Frame>
+
+If biometrics is not triggered automatically, check your device's settings to see which password manager is active and make sure the autofill option is enabled.
+
+---
+
+Questions? Get in touch: [contact@beeswarm.app](mailto:contact@beeswarm.app)
