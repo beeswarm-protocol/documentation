@@ -31,7 +31,6 @@
               "pt/faq",
               {
                 "group": "Extras",
-                "icon": "sunglasses",
                 "pages": [
                   "pt/biometria"
                 ]
@@ -78,7 +77,6 @@
               "es/faq",
               {
                 "group": "Extras",
-                "icon": "sunglasses",
                 "pages": [
                   "es/biometria"
                 ]
@@ -125,7 +123,6 @@
               "en/faq",
               {
                 "group": "Extras",
-                "icon": "sunglasses",
                 "pages": [
                   "en/biometrics"
                 ]
