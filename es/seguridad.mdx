@@ -3,28 +3,184 @@ title: "Seguridad"
 description: "Buenas prácticas para proteger tu billetera BeeSwarm y tus fondos."
 ---
 
-BeeSwarm fue creada para darte el control total de tus fondos. Sigue las recomendaciones a continuación para mantener tu billetera segura.
+BeeSwarm fue creada para darte control total sobre tus fondos. Al ser una aplicación web (PWA), funciona en cualquier navegador y dispositivo — pero esto también significa que **la seguridad de tu entorno es la seguridad de tus fondos**. Sigue las recomendaciones a continuación para mantener tu billetera protegida.
+
+---
 
 ## Billetera no custodial
 
-BeeSwarm es una billetera no custodial. Esto significa que ningún servidor almacena tu contraseña, tu seed phrase ni tus claves privadas — todo se guarda localmente en tu dispositivo.
+BeeSwarm es una billetera no custodial. Ningún servidor almacena tu contraseña, frase semilla o claves privadas — todo se guarda localmente en tu dispositivo.
 
-## Protege tu seed phrase
+---
 
-Tu seed phrase es la clave maestra de tu billetera. Anótala en papel, guárdala en un lugar seguro y offline y jamás la compartas con nadie — ni siquiera con el soporte de BeeSwarm.
+## Protege tu frase semilla
+
+Tu frase semilla es la llave maestra de tu billetera. Anótala en papel, guárdala en un lugar seguro y sin conexión, y nunca la compartas con nadie — ni siquiera con el soporte de BeeSwarm.
 
 <Warning>
-  BeeSwarm nunca te pedirá tu seed phrase, contraseña o claves privadas por email, chat ni ningún otro canal. Desconfía de cualquier mensaje que solicite esa información.
+BeeSwarm nunca te pedirá tu frase semilla, contraseña o claves privadas por email, chat u otro canal. Desconfía de cualquier mensaje que solicite esta información.
 </Warning>
+
+---
+
+### Nunca hagas una copia de seguridad digital de tu frase semilla
+
+No la fotografíes, no la guardes en notas del teléfono, no la envíes por mensaje ni la almacenes en servicios de nube como Google Drive, iCloud o Dropbox. Cualquier acceso no autorizado a estos servicios compromete tus fondos de inmediato.
+
+La única forma segura de guardar tu frase semilla es **anotada en papel, sin conexión, en un lugar físico seguro**.
+
+---
+
+### Múltiples cuentas, una frase semilla
+
+Si usas múltiples cuentas en BeeSwarm, todas se derivan de la misma frase semilla. Esto significa que comprometer la semilla compromete **todas las cuentas y todos los fondos** a la vez. Guárdala con el mismo cuidado independientemente de qué cuenta estés usando activamente.
+
+---
+
+## Uso recomendado: móvil en modo standalone
+
+Recomendamos fuertemente usar BeeSwarm en el móvil, instalada en modo standalone — agregada a la pantalla de inicio como una app. Este modo aísla la app del navegador, reduce la superficie de ataque y agrega una capa extra de protección.
+
+Para instalar en modo standalone, usa solo navegadores oficiales y conocidos: **Safari, Chrome, Opera o Firefox**. No recomendamos la instalación desde navegadores beta, en fase de pruebas o de origen desconocido.
+
+<Note>
+Estar en modo standalone no garantiza seguridad total si el dispositivo no está seguro. Pero en un dispositivo seguro, es una capa adicional de protección.
+</Note>
+
+---
+
+## Dispositivos móviles
+
+### Recomendaciones generales
+
+- Usa un dispositivo **actualizado** — cada actualización del fabricante corrige vulnerabilidades reales. Los dispositivos antiguos, sin soporte o sin las últimas actualizaciones de seguridad, aumentan el riesgo.
+- Evita usar BeeSwarm en dispositivos que hayan pasado por reparaciones externas — especialmente si el software fue reinstalado por terceros que no sean el fabricante oficial.
+- No uses BeeSwarm dentro de **WebViews inyectadas** en otras aplicaciones nativas.
+
+### iOS
+
+No recomendamos el uso en dispositivos con **jailbreak**. Si realizaste el jailbreak y tienes pleno conocimiento de sus implicaciones de seguridad, evalúa con criterio antes de usar.
+
+No recomendamos el uso si el dispositivo tiene **perfiles instalados** — como fuentes de terceros, perfiles de correo corporativo desconocido, automatizaciones con IA, lectores de rendimiento o cualquier perfil de origen no verificado.
+
+No recomendamos abrir o instalar BeeSwarm desde apps de **TestFlight** o entornos de prueba. Aunque TestFlight es de Apple, los proyectos en beta pueden introducir riesgos en el dispositivo y en tus fondos.
+
+### Android
+
+No recomendamos el uso en dispositivos con **root**.
+
+Toma precauciones si el dispositivo tiene aplicaciones instaladas fuera de las tiendas oficiales, o apps — incluso de la tienda — que no sean de empresas verificadas. Esto incluye limpiadores de caché, desinstaladores de apps, lectores de rendimiento o cualquier app que monitoree otras aplicaciones y no sea de una empresa reconocida como Google o Microsoft.
+
+### Grabadores de pantalla y edición de video
+
+Evita grabar la pantalla de BeeSwarm con aplicaciones de grabación de terceros. Estas apps pueden enviar el contenido grabado a servidores externos — y si tu frase semilla, clave privada o saldo es visible en el video, tus fondos pueden verse comprometidos.
+
+Usa solo el **grabador nativo del dispositivo**, que viene preinstalado por el fabricante.
+
+Lo mismo aplica para las apps de edición de video que suben contenido automáticamente a sus propios servidores. Al importar un video con información sensible de la billetera, puedes estar enviando ese contenido a terceros sin darte cuenta.
+
+<Warning>
+Si necesitas grabar o editar un video que muestre BeeSwarm, asegúrate de que ninguna información sensible — frase semilla, saldo, dirección completa — sea visible. Nunca compartas grabaciones que contengan estos datos.
+</Warning>
+
+---
 
 ## Activa la autenticación biométrica
 
-Activa la autenticación biométrica para proteger el acceso a la app. Face ID y Touch ID garantizan que solo tú puedas abrir tu billetera.
+Activa la autenticación biométrica para proteger el acceso a la app. En dispositivos modernos compatibles, la biometría utiliza la seguridad integrada directamente por el fabricante del dispositivo — una capa extremadamente difícil de romper o falsificar.
+
+Usar BeeSwarm en un dispositivo compatible con biometría sin activarla no es recomendable. La contraseña manual funciona, pero la biometría ofrece una protección significativamente superior.
+
+Más información en [Biometría](/es/biometria).
+
+---
+
+## Uso en escritorio
+
+BeeSwarm funciona en navegadores de escritorio, pero **recomendamos usarla en el móvil**. Si optas por el escritorio:
+
+- Usa una máquina segura con sistema operativo actualizado.
+- No uses navegadores con extensiones desconocidas instaladas — especialmente extensiones que lean el contenido de páginas, monitoreen el tráfico o inyecten scripts.
+- Prefiere abrir BeeSwarm en una ventana sin extensiones activas, o en un perfil limpio del navegador.
+- No recomendamos el uso en navegadores que se publicitan como "rápidos" o en versiones beta.
+
+**Los usuarios de Linux** que llegan a este punto generalmente ya tienen el conocimiento necesario para evaluar la seguridad de su entorno. Las mismas recomendaciones anteriores aplican.
+
+---
+
+## Red
+
+- Usa siempre una **red Wi-Fi segura y de confianza**. Evita redes públicas o abiertas al usar BeeSwarm.
+- Las redes domésticas protegidas con contraseña son el mínimo recomendado.
+- Sobre VPN: el uso de VPN no introduce vulnerabilidades conocidas para BeeSwarm, pero no reemplaza las demás precauciones anteriores.
+
+---
 
 ## Usa solo la dirección oficial
 
-No instales la app desde enlaces desconocidos. Accede siempre desde la dirección oficial: [mobile.beeswarm.app](https://mobile.beeswarm.app).
+Accede a BeeSwarm siempre a través de los dominios oficiales:
+
+- **mobile.beeswarm.app** — aplicación principal
+- **beeswarm.app**
+- **beeswarm.com.br**
+
+No accedas ni instales la app desde enlaces desconocidos, redireccionamientos o dominios que no sean subdominios oficiales de BeeSwarm.
+
+---
+
+## Cuidado con el phishing y las estafas
+
+Web3 es un entorno con alto índice de intentos de estafa. Ten cuidado con:
+
+- Enlaces falsos en redes sociales haciéndose pasar por BeeSwarm
+- Grupos de Telegram, Discord o WhatsApp fingiendo ser soporte oficial
+- Airdrops o promociones que piden conectar tu billetera o ingresar tu frase semilla
+- Sitios con dominios parecidos pero diferentes al oficial — como `beeswarrn.app` o `bee-swarm.app`
+
+<Warning>
+El soporte oficial de BeeSwarm nunca contacta primero. Si alguien te contacta ofreciendo ayuda, soporte o bonificaciones, desconfía.
+</Warning>
+
+---
+
+## Canales oficiales de BeeSwarm
+
+BeeSwarm tiene canales oficiales de comunicación. Cualquier grupo, perfil o canal fuera de esta lista no es oficial y no representa al equipo de BeeSwarm:
+
+| Canal | Enlace |
+|---|---|
+| Twitter/X | [x.com/beeswarmapp](https://x.com/beeswarmapp) |
+| Telegram | [t.me/BeeSwarmApp](https://t.me/BeeSwarmApp) |
+| Instagram | [instagram.com/beeswarm.app](https://www.instagram.com/beeswarm.app) |
+| Sitio oficial | [beeswarm.app](https://beeswarm.app) |
+| Aplicación | [mobile.beeswarm.app](https://mobile.beeswarm.app) |
+| Documentación | [docs.beeswarm.app](https://docs.beeswarm.app) |
+
+<Warning>
+Grupos no oficiales pueden usar el nombre e identidad visual de BeeSwarm. No confíes en información, enlaces o instrucciones provenientes de canales que no estén en esta lista.
+</Warning>
+
+---
+
+## Dispositivos no recomendados
+
+No recomendamos el uso de BeeSwarm en los siguientes contextos:
+
+- Dispositivos falsificados — como iPhones falsos o smartwatches que simulan productos originales
+- Pantallas multimedia de vehículos, especialmente de marcas con historial de recopilación de datos de uso
+- Tablets o pantallas de entretenimiento en transportes públicos o aviones
+- Cualquier dispositivo compartido o de uso público
+
+---
+
+## Aprobaciones de contratos vía WalletConnect
+
+Al conectar BeeSwarm a dApps externos vía WalletConnect, puedes recibir solicitudes para aprobar gastos de tokens. Lee siempre con atención lo que estás autorizando antes de confirmar — una aprobación mal hecha puede permitir que un contrato mueva tokens de tu billetera sin una nueva confirmación tuya.
+
+En caso de duda, rechaza e investiga el dApp antes de continuar.
+
+---
 
 ## Recuperación de billetera
 
-En caso de pérdida o cambio de dispositivo, tu billetera puede recuperarse en cualquier momento usando tu seed phrase.
+En caso de pérdida o cambio de dispositivo, tu billetera puede recuperarse en cualquier momento usando tu frase semilla. Guárdala con cuidado — es el único medio de recuperación.

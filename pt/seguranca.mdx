@@ -3,28 +3,184 @@ title: "Segurança"
 description: "Boas práticas para proteger sua carteira BeeSwarm e seus fundos."
 ---
 
-A BeeSwarm foi criada para colocar você no controle total dos seus fundos. Siga as recomendações abaixo para manter sua carteira segura.
+A BeeSwarm foi criada para colocar você no controle total dos seus fundos. Por ser um aplicativo web (PWA), ela funciona em qualquer navegador e dispositivo — mas isso também significa que **a segurança do seu ambiente é a segurança dos seus fundos**. Siga as recomendações abaixo para manter sua carteira protegida.
+
+---
 
 ## Carteira não-custodial
 
-A BeeSwarm é uma carteira não-custodial. Isso significa que nenhum servidor armazena sua senha, sua seed phrase ou suas chaves privadas — tudo fica salvo localmente no seu dispositivo.
+A BeeSwarm é uma carteira não-custodial. Nenhum servidor armazena sua senha, sua seed phrase ou suas chaves privadas — tudo fica salvo localmente no seu dispositivo.
+
+---
 
 ## Proteja sua seed phrase
 
 Sua seed phrase é a chave-mestra da sua carteira. Anote-a em papel, guarde em local seguro e offline e jamais a compartilhe com ninguém — nem com o suporte da BeeSwarm.
 
 <Warning>
-  A BeeSwarm nunca vai te pedir sua seed phrase, senha ou chaves privadas por email, chat ou qualquer outro canal. Desconfie de qualquer mensagem que solicite essas informações.
+A BeeSwarm nunca vai te pedir sua seed phrase, senha ou chaves privadas por email, chat ou qualquer outro canal. Desconfie de qualquer mensagem que solicite essas informações.
 </Warning>
+
+---
+
+### Nunca faça backup digital da sua seed phrase
+
+Não fotografe, não salve em notas do celular, não envie por mensagem e não armazene em serviços de nuvem como Google Drive, iCloud ou Dropbox. Qualquer acesso não autorizado a esses serviços compromete seus fundos imediatamente.
+
+A única forma segura de guardar sua seed phrase é **anotada em papel, offline, em local físico seguro**.
+
+---
+
+## Uso recomendado: celular em modo standalone
+
+Recomendamos fortemente o uso da BeeSwarm no celular, instalada em modo standalone — adicionada à tela inicial como um aplicativo. Esse modo isola o app do navegador, reduz a superfície de ataque e adiciona uma camada extra de proteção.
+
+Para instalar em modo standalone, use apenas navegadores oficiais e conhecidos: **Safari, Chrome, Opera ou Firefox**. Não recomendamos a instalação a partir de navegadores beta, em fase de testes ou de origem desconhecida.
+
+<Note>
+Estar em modo standalone não garante segurança total se o dispositivo não estiver seguro. Mas em um dispositivo seguro, é uma camada a mais de proteção.
+</Note>
+
+---
+
+## Dispositivos móveis
+
+### Recomendações gerais
+
+- Use um dispositivo **atualizado** — cada atualização do fabricante corrige vulnerabilidades reais. Dispositivos antigos, sem suporte ou sem as últimas atualizações de segurança, aumentam o risco.
+- Evite usar a BeeSwarm em dispositivos que passaram por manutenção externa — especialmente se o software foi reinstalado por terceiros que não o fabricante oficial.
+- Não use a BeeSwarm dentro de **WebViews injetadas** em outros aplicativos nativos.
+
+### iOS
+
+Não recomendamos o uso em dispositivos com **jailbreak**. Se você realizou o jailbreak e tem pleno conhecimento do que isso implica em termos de segurança, avalie com critério antes de usar.
+
+Não recomendamos o uso se o dispositivo tiver **perfis instalados** — como fontes de terceiros, perfis de email corporativo desconhecido, automações com IA, leitores de desempenho ou qualquer perfil de origem não verificada.
+
+Não recomendamos abrir ou instalar a BeeSwarm a partir de apps do **TestFlight** ou ambientes de teste. Embora o TestFlight seja da Apple, projetos em beta podem introduzir riscos ao dispositivo e aos fundos.
+
+### Android
+
+Não recomendamos o uso em dispositivos com **root**.
+
+Tome precauções se o dispositivo tiver aplicativos instalados fora das lojas oficiais, ou apps — mesmo da loja — que não sejam de empresas verificadas. Isso inclui limpadores de cache, desinstaladores de apps, leitores de desempenho ou qualquer app que monitore outros aplicativos e não seja de uma empresa reconhecida como Google ou Microsoft.
+
+### Gravadores de tela e edição de vídeo
+
+Evite gravar a tela da BeeSwarm com aplicativos de gravação de terceiros. Esses apps podem enviar o conteúdo gravado para servidores externos — e se sua seed phrase, chave privada ou saldo estiver visível no vídeo, seus fundos podem ser comprometidos.
+
+Use apenas o **gravador nativo do dispositivo**, que vem instalado de fábrica pelo fabricante.
+
+O mesmo vale para aplicativos de edição de vídeo que fazem upload automático para servidores próprios. Ao importar um vídeo com informações sensíveis da carteira, você pode estar enviando esse conteúdo para terceiros sem perceber.
+
+<Warning>
+Se precisar gravar ou editar um vídeo que mostre a BeeSwarm, certifique-se de que nenhuma informação sensível — seed phrase, saldo, endereço completo — esteja visível. Nunca compartilhe gravações que contenham esses dados.
+</Warning>
+
+---
 
 ## Ative a autenticação biométrica
 
-Ative a autenticação biométrica para proteger o acesso ao app. Face ID e Touch ID garantem que apenas você consegue abrir sua carteira.
+Ative a autenticação biométrica para proteger o acesso ao app. Em dispositivos modernos compatíveis, a biometria utiliza a segurança embutida diretamente pelo fabricante do dispositivo — uma camada extremamente difícil de quebrar ou falsificar.
+
+Usar a BeeSwarm em um dispositivo compatível com biometria sem ativá-la não é recomendado. A senha manual funciona, mas a biometria oferece uma proteção significativamente superior.
+
+Saiba mais em [Biometria](/pt/biometria).
+
+---
+
+## Uso no desktop
+
+A BeeSwarm funciona em navegadores desktop, mas **recomendamos o uso no celular**. Se optar pelo desktop:
+
+- Use uma máquina segura, com sistema operacional atualizado.
+- Não use navegadores com extensões desconhecidas instaladas — especialmente extensões que leem o conteúdo de páginas, monitoram o tráfego ou injetam scripts.
+- Prefira abrir a BeeSwarm em uma janela sem extensões ativas, ou em um perfil limpo do navegador.
+- Não recomendamos o uso em navegadores titulados como "rápidos" ou em versões beta.
+
+**Usuários de Linux** que chegam até esse ponto geralmente já têm o conhecimento necessário para avaliar a segurança do seu ambiente. As mesmas recomendações acima se aplicam.
+
+---
+
+## Rede
+
+- Use sempre uma **rede Wi-Fi segura e de confiança**. Evite redes públicas ou abertas ao usar a BeeSwarm.
+- Redes domésticas protegidas por senha são o mínimo recomendado.
+- Sobre VPN: o uso de VPN não introduz vulnerabilidades conhecidas para a BeeSwarm, mas também não substitui as demais precauções acima.
+
+---
 
 ## Use apenas o endereço oficial
 
-Não instale o app a partir de links desconhecidos. Acesse sempre pelo endereço oficial: [mobile.beeswarm.app](https://mobile.beeswarm.app).
+Acesse a BeeSwarm sempre pelos domínios oficiais:
+
+- **mobile.beeswarm.app** — aplicativo principal
+- **beeswarm.app**
+- **beeswarm.com.br**
+
+Não acesse ou instale o app a partir de links desconhecidos, redirecionamentos ou domínios que não sejam subdomínios oficiais da BeeSwarm.
+
+---
+
+## Cuidado com phishing e golpes
+
+O Web3 é um ambiente com alto índice de tentativas de golpe. Fique atento a:
+
+- Links falsos em redes sociais se passando pela BeeSwarm
+- Grupos de Telegram, Discord ou WhatsApp fingindo ser suporte oficial
+- Airdrops ou promoções que pedem para conectar sua carteira ou inserir sua seed phrase
+- Sites com domínios parecidos mas diferentes do oficial — como `beeswarrn.app` ou `bee-swarm.app`
+
+<Warning>
+O suporte oficial da BeeSwarm nunca entra em contato primeiro. Se alguém te contatar oferecendo ajuda, suporte ou bônus, desconfie.
+</Warning>
+
+---
+
+## Canais oficiais da BeeSwarm
+
+A BeeSwarm possui canais oficiais de comunicação. Qualquer grupo, perfil ou canal fora desta lista não é oficial e não representa a equipe da BeeSwarm:
+
+| Canal | Link |
+|---|---|
+| Twitter/X | [x.com/beeswarmapp](https://x.com/beeswarmapp) |
+| Telegram | [t.me/beeswarmapp](https://t.me/beeswarmapp) |
+| Instagram | [instagram.com/beeswarm.app](https://www.instagram.com/beeswarm.app) |
+| Site oficial | [beeswarm.app](https://beeswarm.app) |
+| Aplicativo | [mobile.beeswarm.app](https://mobile.beeswarm.app) |
+| Documentação | [docs.beeswarm.app](https://docs.beeswarm.app) |
+
+<Warning>
+Grupos não oficiais podem usar o nome e a identidade visual da BeeSwarm. Não confie em informações, links ou instruções vindos de canais que não estejam nesta lista.
+</Warning>
+
+---
+
+## Dispositivos não recomendados
+
+Não recomendamos o uso da BeeSwarm nos seguintes contextos:
+
+- Dispositivos falsificados — como iPhones falsos ou smartwatches que simulam produtos originais
+- Telas multimídia de veículos, especialmente de marcas com histórico de coleta de dados de uso
+- Tablets ou telas de entretenimento em transportes públicos ou aviões
+- Qualquer dispositivo compartilhado ou de uso público
+
+---
+
+## Aprovações de contratos via WalletConnect
+
+Ao conectar a BeeSwarm a dApps externos via WalletConnect, você pode receber solicitações para aprovar gastos de tokens. Leia sempre com atenção o que está autorizando antes de confirmar — uma aprovação mal feita pode permitir que um contrato mova tokens da sua carteira sem uma nova confirmação sua.
+
+Em caso de dúvida, rejeite e pesquise sobre o dApp antes de prosseguir.
+
+---
 
 ## Recuperação de carteira
 
-Em caso de perda ou troca de dispositivo, sua carteira pode ser recuperada em qualquer momento usando sua seed phrase.
+Em caso de perda ou troca de dispositivo, sua carteira pode ser recuperada a qualquer momento usando sua seed phrase. Guarde-a com cuidado — ela é o único meio de recuperação.
+
+---
+
+### Múltiplas contas, uma seed phrase
+
+Se você usa múltiplas contas na BeeSwarm, todas são derivadas da mesma seed phrase. Isso significa que comprometer a seed compromete **todas as contas e todos os fundos** de uma só vez. Guarde-a com o mesmo cuidado independente de qual conta está usando ativamente.

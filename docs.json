@@ -26,13 +26,19 @@
               "pt/primeiros-passos",
               "pt/enviar-e-receber",
               "pt/seguranca",
-              "pt/conectar-com-dapps",
               "pt/redes-suportadas",
               "pt/faq",
               {
                 "group": "Extras",
                 "pages": [
                   "pt/biometria"
+                ]
+              },
+              {
+                "group": "Funcionalidades",
+                "pages": [
+                  "pt/features/swap",
+                  "pt/features/wallet-connect"
                 ]
               }
             ]
@@ -72,13 +78,19 @@
               "es/primeros-pasos",
               "es/enviar-y-recibir",
               "es/seguridad",
-              "es/conectar-con-dapps",
               "es/redes-soportadas",
               "es/faq",
               {
                 "group": "Extras",
                 "pages": [
                   "es/biometria"
+                ]
+              },
+              {
+                "group": "Funcionalidades",
+                "pages": [
+                  "es/features/swap",
+                  "es/features/wallet-connect"
                 ]
               }
             ]
@@ -118,13 +130,19 @@
               "en/getting-started",
               "en/send-and-receive",
               "en/security",
-              "en/connect-with-dapps",
               "en/supported-networks",
               "en/faq",
               {
                 "group": "Extras",
                 "pages": [
                   "en/biometrics"
+                ]
+              },
+              {
+                "group": "Features",
+                "pages": [
+                  "en/features/swap",
+                  "en/features/wallet-connect"
                 ]
               }
             ]

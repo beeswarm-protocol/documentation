@@ -1,0 +1,147 @@
+---
+title: "Swap"
+description: "Intercambia tokens directamente desde BeeSwarm, con enrutamiento automático a través de PancakeSwap V2 y V3."
+---
+
+<img src="https://media.beeswarm.app/swap-banner-es.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '100%' }} />
+
+## ¿Qué es el Swap?
+
+BeeSwarm tiene un módulo de swap integrado que permite intercambiar tokens directamente desde la billetera, sin salir de la app.
+
+<Note>
+BeeSwarm **no ejecuta el swap directamente**. La ejecución es realizada por los contratos oficiales de PancakeSwap, los mismos que utiliza su interfaz.
+</Note>
+
+**Contratos utilizados:**
+
+| Contrato | Dirección |
+|---|---|
+| Router V2 | `0x10ED43C718714eb63d5aA57B78B54704E256024E` |
+| Universal Router V3 | `0xd9C500DfF816a1Da21A48A732d3498Bf09dc9AEB` |
+| Permit2 (PancakeSwap) | `0x31c2F6fcFf4F8759b3Bd5Bf0e1084A055615c768` |
+| QuoterV2 | `0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997` |
+
+Todos los contratos pueden verificarse en [BscScan](https://bscscan.com) y consultarse en la documentación oficial de PancakeSwap: [V2](https://developer.pancakeswap.finance/contracts/v2/addresses) y [V3](https://developer.pancakeswap.finance/contracts/v3/addresses).
+
+---
+
+## Cómo usar
+
+1. Accede al swap desde el menú principal de la billetera.
+
+<img src="https://media.beeswarm.app/pt-swap-how-to-open.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+2. Selecciona el token de origen y el token de destino.
+
+<img src="https://media.beeswarm.app/pt-swap-select-token.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+3. Ingresa el valor en el campo **"De"** o **"Para"** — la cotización se carga automáticamente.
+
+<img src="https://media.beeswarm.app/pt-swap-typing-value.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+4. Elige el pool deseado (V2 o V3) o deja que BeeSwarm seleccione automáticamente el mejor.
+
+<img src="https://media.beeswarm.app/pt-swap-switch-pools.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+5. Toca **Swap** y confirma con tu contraseña.
+
+<Tip>
+En dispositivos compatibles, la confirmación puede realizarse mediante biometría o Face ID, sin necesidad de escribir la contraseña. Más información en [Biometría](/es/biometria).
+</Tip>
+
+<img src="https://media.beeswarm.app/pt-swap-signing.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+---
+
+## Pools V2 y V3
+
+Al ingresar un valor, BeeSwarm consulta simultáneamente los pools V2 y V3 de PancakeSwap y muestra los resultados justo debajo de los campos de entrada.
+
+<img src="https://media.beeswarm.app/pt-swap-v2-v3.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '100%' }} />
+
+- Si el par solo tiene liquidez en V2, únicamente se mostrará la tarjeta V2.
+- Si ambos están disponibles, verás las dos tarjetas y podrás elegir cuál usar.
+
+BeeSwarm selecciona automáticamente el pool con mayor rendimiento. Puedes cambiar manualmente tocando la tarjeta correspondiente.
+
+<Tip>
+El pool V3 tiende a ofrecer mejores precios al usar liquidez concentrada y niveles de comisión optimizados por rango de precio.
+</Tip>
+
+---
+
+## Slippage
+
+<img src="https://media.beeswarm.app/pt-swap-slippage.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+El slippage define la variación máxima de precio aceptada entre la cotización y la ejecución. BeeSwarm ajusta el slippage automáticamente según el impacto de precio detectado.
+
+También puedes configurarlo manualmente tocando el valor de slippage en los detalles del swap. Las opciones disponibles son:
+
+- **0.1%** — ideal para pares estables con alta liquidez
+- **0.5%** — uso general
+- **1.5%** — valor predeterminado recomendado
+- **Auto** — ajustado dinámicamente por BeeSwarm
+- **Personalizado** — define el valor manualmente
+
+<Warning>
+Un slippage muy bajo puede causar que la transacción falle. Un slippage muy alto aumenta el riesgo de recibir menos de lo esperado y la exposición a frontrunning.
+</Warning>
+
+---
+
+## Tokens con tarifa
+
+Algunos tokens tienen tarifas integradas en el contrato — conocidos como *transfer fee* o *tax tokens*. Estos tokens cobran un porcentaje en cada transferencia, lo que puede hacer que la transacción falle si el slippage no es suficiente para cubrir esa tarifa.
+
+BeeSwarm identifica automáticamente los tokens con tarifa conocidos y ajusta el slippage para garantizar que el swap se ejecute con éxito.
+
+El ícono en la esquina superior derecha del swap cambia según el nivel de riesgo detectado:
+
+<img src="https://media.beeswarm.app/pt-swap-normal.png" alt="Ícono normal" style={{ borderRadius: '12px', width: '43%' }} />
+**Normal** — swap dentro de los parámetros esperados.
+
+---
+
+<img src="https://media.beeswarm.app/pt-swap-warning.png" alt="Ícono warning" style={{ borderRadius: '12px', width: '43%' }} />
+**Atención** — slippage elevado o impacto de precio por encima de lo esperado.
+
+---
+
+<img src="https://media.beeswarm.app/pt-swap-danger.png" alt="Ícono danger" style={{ borderRadius: '12px', width: '43%' }} />
+**Riesgo alto** — slippage muy alto o impacto de precio elevado. Revisa los detalles antes de confirmar.
+
+Toca el ícono para abrir los detalles completos del swap.
+
+---
+
+## Ruta
+
+<img src="https://media.beeswarm.app/pt-swap-routes.gif" alt="Rutas del swap" style={{ borderRadius: '12px', width: '43%' }} />
+
+BeeSwarm encuentra automáticamente la mejor ruta entre los tokens. Cuando no existe liquidez directa para el par seleccionado, la ruta pasa por un token intermediario — por ejemplo, `ETH → WBNB → BCH`.
+
+La ruta utilizada se muestra en los detalles del swap, con los logos de los tokens involucrados.
+
+---
+
+## Detalles del swap
+
+Antes de confirmar, toca el ícono en la esquina superior derecha para ver la información completa de la operación:
+
+<img src="https://media.beeswarm.app/pt-swap-detalhes.gif" alt="Detalles del swap" style={{ borderRadius: '12px', width: '43%' }} />
+
+| Campo | Descripción |
+|---|---|
+| Slippage | Tolerancia configurada |
+| Mínimo recibido | Monto mínimo garantizado tras el slippage |
+| Impacto en el precio | Variación causada por tu swap en el pool |
+| Precio final | Cotización estimada de salida |
+| Ruta | Camino recorrido entre los tokens |
+| Pool | V2 o V3 |
+| Tarifa de negociación | 0.88% |
+
+<Note>
+BeeSwarm cobra una tarifa del 0.88% por swap, deducida automáticamente de la transacción. Esta tarifa sustenta el desarrollo y mantenimiento de la plataforma.
+</Note>
