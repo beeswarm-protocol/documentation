@@ -1,0 +1,124 @@
+---
+title: "Perguntas frequentes"
+description: "Dúvidas comuns sobre o BeeChat."
+---
+
+## Geral
+
+<AccordionGroup>
+  <Accordion title="Preciso criar uma conta para usar o BeeChat?">
+    Não. O BeeChat não tem cadastro, usuário ou senha próprios. Sua identidade é o endereço da sua carteira BeeSwarm. Basta ter uma carteira ativa e fazer o registro inicial no contrato do BeeChat.
+  </Accordion>
+
+  <Accordion title="O BeeChat funciona sem internet?">
+    Não. O envio de mensagens exige conexão com a internet para transmitir a transação à BNB Smart Chain. A leitura de mensagens também requer conexão para buscar os dados na blockchain.
+  </Accordion>
+
+  <Accordion title="Posso usar o BeeChat em qualquer dispositivo?">
+    Sim, em qualquer dispositivo onde a BeeSwarm esteja instalada e com a mesma carteira ativa. Suas mensagens ficam na blockchain e podem ser acessadas de qualquer lugar com sua carteira.
+  </Accordion>
+
+  <Accordion title="O BeeChat funciona com qualquer carteira ou só com a BeeSwarm?">
+    O BeeChat está integrado exclusivamente à BeeSwarm. Qualquer endereço de carteira pode ser destinatário de mensagens, mas para enviar é necessário usar a BeeSwarm.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Mensagens
+
+<AccordionGroup>
+  <Accordion title="Posso apagar uma mensagem após o envio?">
+    Não. Mensagens gravadas na blockchain são permanentes e imutáveis. Não é possível apagar, editar ou revogar uma mensagem após a confirmação da transação.
+  </Accordion>
+
+  <Accordion title="Posso enviar imagens ou arquivos?">
+    Não no momento. O BeeChat suporta apenas conteúdo textual. O suporte a outros formatos poderá ser adicionado em versões futuras.
+  </Accordion>
+
+  <Accordion title="Meu contato precisa estar online para receber minha mensagem?">
+    Não. A mensagem é gravada na blockchain independentemente de o destinatário estar online. Ele verá a mensagem quando abrir a conversa, independentemente de quando isso acontecer.
+  </Accordion>
+
+  <Accordion title="Enviei uma mensagem para um contato não registrado. Ele verá quando se cadastrar?">
+    Não. Mensagens enviadas antes do registro do destinatário não podem ser lidas por ele, mesmo após o cadastro. A proteção de ponta a ponta exige que ambos os participantes tenham uma identidade criptográfica ativa no BeeChat — sem ela, não há como estabelecer a conexão segura entre as duas pontas. Para garantir que seu contato leia suas mensagens, confirme que ele já está ativo no BeeChat antes de enviar.
+  </Accordion>
+
+  <Accordion title="Por que minha mensagem demora alguns segundos para aparecer?">
+    Cada mensagem é uma transação na BNB Smart Chain. Após o envio, a rede precisa confirmar e incluir a transação em um bloco — processo que leva alguns segundos. Durante esse tempo, sua mensagem aparece com o ícone ⏰ indicando que está sendo propagada.
+  </Accordion>
+
+  <Accordion title="Posso verificar minhas mensagens diretamente na blockchain?">
+    Sim. Cada mensagem tem um hash de transação único. Toque no hash exibido abaixo da mensagem para abrir a transação no BscScan e verificar o registro on-chain.
+  </Accordion>
+
+  <Accordion title="O que acontece se eu fechar o BeeChat durante o envio de uma mensagem?">
+    A transação já foi enviada para a rede e será confirmada independentemente. Ao reabrir o BeeChat, a mensagem aparecerá normalmente após a confirmação.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Privacidade e segurança
+
+<AccordionGroup>
+  <Accordion title="A BeeSwarm consegue ler minhas mensagens?">
+    Não. As mensagens são cifradas no seu dispositivo antes de sair. Nem a BeeSwarm, nem nenhum servidor tem acesso ao conteúdo. Só você e seu contato conseguem decifrar as mensagens.
+  </Accordion>
+
+  <Accordion title="Minha identidade fica exposta na blockchain?">
+    Seu endereço de carteira fica visível — qualquer pessoa pode ver que dois endereços trocaram mensagens. Sua identidade real, no entanto, só fica exposta se seu endereço estiver associado publicamente a você em outros contextos, como exchanges com KYC ou redes sociais.
+  </Accordion>
+
+  <Accordion title="É seguro usar minha carteira principal no BeeChat?">
+    Não recomendamos. Para máxima privacidade e segurança, use uma carteira dedicada exclusivamente ao BeeChat, separada da sua carteira principal onde guarda ativos ou realiza transações de valor.
+  </Accordion>
+
+  <Accordion title="Alguém pode falsificar uma mensagem minha?">
+    Não. Cada mensagem é uma transação assinada com sua chave privada. É matematicamente impossível forjar uma assinatura válida sem ter acesso à sua chave privada.
+  </Accordion>
+
+  <Accordion title="A computação quântica pode comprometer minhas mensagens?">
+    Não existe hoje nenhum computador capaz de quebrar a proteção usada pelo BeeChat — os mesmos padrões usados pelo Signal, WhatsApp e pela maior parte da internet. No longo prazo, o avanço da computação quântica representa um risco teórico para os padrões criptográficos atuais como um todo. O BeeChat acompanhará a indústria e migrará para padrões pós-quânticos quando disponíveis. [Saiba mais](/pt/beechat/privacidade-e-seguranca#sobre-computação-quântica).
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Custos
+
+<AccordionGroup>
+  <Accordion title="Quanto custa enviar uma mensagem?">
+    O custo varia conforme o congestionamento da BNB Smart Chain. O BeeChat exibe sempre uma estimativa atualizada do custo por mensagem e quantas mensagens seu saldo atual comporta.
+  </Accordion>
+
+  <Accordion title="Por que preciso pagar para enviar mensagens?">
+    Cada mensagem é uma transação na blockchain. A taxa cobre o custo de processamento e armazenamento permanente da transação pelos validadores da BNB Smart Chain, mais uma taxa do protocolo BeeChat.
+  </Accordion>
+
+  <Accordion title="O registro inicial tem custo?">
+    Sim. O registro da sua chave pública no contrato é uma transação on-chain e exige uma pequena taxa em BNB. É uma operação única — você não precisará repetir.
+  </Accordion>
+
+  <Accordion title="Preciso de BNB para usar o BeeChat?">
+    Sim. Tanto o registro inicial quanto o envio de cada mensagem exigem BNB para cobrir as taxas de transação na BNB Smart Chain.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Problemas comuns
+
+<AccordionGroup>
+  <Accordion title="Não consigo ver as mensagens do meu contato. O que pode ser?">
+    Verifique se seu contato já está registrado no BeeChat. Se ele se registrou depois que você enviou mensagens, ele não conseguirá ler as anteriores — e o mesmo vale para você receber as dele se seu registro foi posterior. Certifique-se também de estar com conexão estável com a internet.
+  </Accordion>
+
+  <Accordion title="Minha mensagem ficou com o ícone ⏰ por muito tempo. O que fazer?">
+    O ícone ⏰ indica que a transação está sendo propagada na rede. Em condições normais, desaparece em segundos. Se persistir por mais de alguns minutos, verifique sua conexão com a internet. A transação será confirmada assim que a rede processar — feche e reabra a conversa para atualizar.
+  </Accordion>
+
+  <Accordion title="Esqueci de verificar se meu contato estava registrado antes de enviar. O que acontece?">
+    A mensagem foi enviada e gravada na blockchain. Ela ficará visível para você na conversa, mas seu contato não conseguirá lê-la. Você pode enviar uma nova mensagem após ele se registrar — essa ele lerá normalmente.
+  </Accordion>
+</AccordionGroup>

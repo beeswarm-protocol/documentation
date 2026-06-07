@@ -44,6 +44,19 @@
             ]
           },
           {
+            "group": "BeeChat",
+            "icon": "message-dots",
+            "pages": [
+              "pt/beechat/introducao",
+              "pt/beechat/primeiros-passos",
+              "pt/beechat/como-funciona",
+              "pt/beechat/enviando-mensagens",
+              "pt/beechat/privacidade-e-seguranca",
+              "pt/beechat/casos-de-uso",
+              "pt/beechat/faq"
+            ]
+          },
+          {
             "group": "Swarm",
             "icon": "honey-pot",
             "pages": [

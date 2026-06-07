@@ -1,0 +1,185 @@
+---
+title: "Enviando mensagens"
+description: "Como iniciar uma conversa e enviar mensagens no BeeChat."
+---
+
+Para enviar uma mensagem no BeeChat, você precisa do endereço da carteira do seu contato. Não há busca por nome, número de telefone ou e-mail — a identidade no BeeChat é o endereço da carteira.
+
+---
+
+## Iniciando uma nova conversa
+
+<Steps>
+  <Step title="Cole o endereço da carteira">
+    Na tela principal do BeeChat, localize o campo de endereço e cole o endereço da carteira com quem deseja conversar. O endereço será validado automaticamente.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v1.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>
+      Endereços de carteira começam sempre com `0x` e têm 42 caracteres. Certifique-se de copiar o endereço completo e correto — uma vez enviada, a mensagem não pode ser apagada.
+    </Note>
+  </Step>
+
+  <Step title="Toque no ícone de chat">
+    Após colar o endereço, toque no ícone de chat ao lado do campo para abrir a conversa.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v2.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+  </Step>
+
+  <Step title="Verifique os avisos">
+    Antes de enviar, o BeeChat pode exibir avisos importantes:
+
+    **Primeira mensagem** — se você ainda não trocou mensagens com esse endereço, a conversa aparecerá vazia com uma mensagem de boas-vindas.
+
+    <img
+      src="https://media.beeswarm.app/pt-first-message-beechat.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    **Contato não registrado** — se o endereço ainda não se cadastrou no BeeChat, você verá um aviso. Você pode enviar a mensagem, mas ele não conseguirá lê-la até se registrar. E mesmo após o registro, mensagens anteriores permanecerão ilegíveis para ele.
+
+    <img
+      src="https://media.beeswarm.app/pt-not-registred-user-beechat-v2.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+    
+  </Step>
+</Steps>
+
+---
+
+## Enviando uma mensagem
+
+<Steps>
+  <Step title="Digite sua mensagem">
+    Com a conversa aberta, digite sua mensagem no campo de texto na parte inferior da tela. O campo expande automaticamente conforme você escreve.
+
+    <img
+      src="https://media.beeswarm.app/pt-typing-process.gif"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>junho de 2026
+
+      O BeeChat suporta apenas conteúdo textual.
+    </Note>
+  </Step>
+
+  <Step title="Confirme o envio">
+    Ao tocar em enviar ou pressionar Enter, uma tela de confirmação será exibida com:
+
+    - A -> Endereço de origem (você) e destino (seu contato)
+    - B -> Prévia da mensagem
+    - C -> Estimativa de custo em BNB
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-info-beechat.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    Revise as informações e toque em **Enviar** para prosseguir.
+  </Step>
+
+  <Step title="Autentique-se">
+    Para assinar a transação, você precisará confirmar com sua senha ou biometria.
+
+    <img
+      src="https://media.beeswarm.app/pt-password-confirm-beechat.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    <Tip>
+      Com a biometria ativada, essa etapa é rápida — basta usar Face ID ou impressão digital. [Veja como ativar](/pt/biometria).
+    </Tip>
+  </Step>
+
+  <Step title="Aguarde a confirmação">
+    Após autenticar, sua mensagem aparecerá imediatamente na conversa com um ícone ⏰, indicando que está sendo propagada na rede blockchain.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-msg-beechat-v2.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    Assim que a transação for confirmada pela BNB Smart Chain — geralmente em alguns segundos — o ícone é substituído pela mensagem definitiva com horário e hash da transação.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirmed-msg-beechat-v2.png"
+      alt="Como acessar o BeeChat"
+      style={{ width: "73%" }}
+    />
+    
+  </Step>
+</Steps>
+
+---
+
+## Informações de cada mensagem
+
+Abaixo de cada mensagem enviada ou recebida, você encontra:
+
+**Horário** — exibe o horário do envio. Toque para expandir e ver a data e horário completos, incluindo fuso horário.
+
+<img
+  src="https://media.beeswarm.app/pt-data-msg-clicking-beechat-v3.gif"
+  alt="Como acessar o BeeChat"
+  style={{ width: "73%" }}
+/>
+
+**Hash da transação** — identificador único da mensagem na blockchain. Toque para abrir no BscScan e verificar o registro on-chain diretamente no navegador.
+
+<img
+  src="https://media.beeswarm.app/pt-hash-msg-indicator-beechat.png"
+  alt="Como acessar o BeeChat"
+  style={{ width: "73%" }}
+/>
+
+---
+
+## Suas conversas
+
+Na tela principal do BeeChat, você encontra a lista de todas as carteiras com quem já trocou mensagens, ordenadas pela interação mais recente.
+
+<img
+  src="https://media.beeswarm.app/pt-start-screen-beechat.png"
+  alt="Como acessar o BeeChat"
+  style={{ width: "53%" }}
+/>
+
+Toque em qualquer conversa para abri-la e ver o histórico completo de mensagens.
+
+---
+
+## Saldo e estimativa de mensagens
+
+No topo do BeeChat, você encontra sempre:
+
+- A -> Quantas mensagens você ainda pode enviar com esse saldo (estimativa)
+- B -> Seu saldo atual em BNB
+- C -> Custo médio estimado por mensagem
+
+<img
+  src="https://media.beeswarm.app/pt-header-info-beechat-v2.png"
+  alt="Como acessar o BeeChat"
+  style={{ width: "73%" }}
+/>
+
+<Note>
+  A estimativa é calculada em tempo real com base no preço atual do gas na BNB Smart Chain. Pode variar conforme o congestionamento da rede.
+</Note>
+
+[→ Entenda como sua privacidade é protegida](/pt/beechat/privacidade-e-seguranca)
