@@ -1,0 +1,124 @@
+---
+title: "Frequently Asked Questions"
+description: "Common questions about BeeChat."
+---
+
+## General
+
+<AccordionGroup>
+  <Accordion title="Do I need to create an account to use BeeChat?">
+    No. BeeChat has no registration, username, or password of its own. Your identity is your BeeSwarm wallet address. You just need an active wallet and to complete the initial registration on the BeeChat contract.
+  </Accordion>
+
+  <Accordion title="Does BeeChat work without internet?">
+    No. Sending messages requires an internet connection to transmit the transaction to BNB Smart Chain. Reading messages also requires a connection to fetch data from the blockchain.
+  </Accordion>
+
+  <Accordion title="Can I use BeeChat on any device?">
+    Yes, on any device where BeeSwarm is installed with the same active wallet. Your messages are on the blockchain and can be accessed from anywhere with your wallet.
+  </Accordion>
+
+  <Accordion title="Does BeeChat work with any wallet or only with BeeSwarm?">
+    BeeChat is exclusively integrated with BeeSwarm. Any wallet address can receive messages, but sending requires using BeeSwarm.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Messages
+
+<AccordionGroup>
+  <Accordion title="Can I delete a message after sending it?">
+    No. Messages recorded on the blockchain are permanent and immutable. It is not possible to delete, edit, or revoke a message after the transaction is confirmed.
+  </Accordion>
+
+  <Accordion title="Can I send images or files?">
+    Not at the moment. BeeChat only supports text content. Support for other formats may be added in future versions.
+  </Accordion>
+
+  <Accordion title="Does my contact need to be online to receive my message?">
+    No. The message is recorded on the blockchain regardless of whether the recipient is online. They will see the message when they open the conversation, no matter when that happens.
+  </Accordion>
+
+  <Accordion title="I sent a message to an unregistered contact. Will they see it when they sign up?">
+    No. Messages sent before the recipient's registration cannot be read by them, even after signing up. End-to-end protection requires both participants to have an active cryptographic identity in BeeChat — without it, there is no way to establish a secure connection between the two ends. To ensure your contact reads your messages, confirm they are already active in BeeChat before sending.
+  </Accordion>
+
+  <Accordion title="Why does my message take a few seconds to appear?">
+    Each message is a transaction on BNB Smart Chain. After sending, the network needs to confirm and include the transaction in a block — a process that takes a few seconds. During this time, your message appears with the ⏰ icon indicating it is being propagated.
+  </Accordion>
+
+  <Accordion title="Can I verify my messages directly on the blockchain?">
+    Yes. Each message has a unique transaction hash. Tap the hash shown below the message to open the transaction on BscScan and verify the on-chain record.
+  </Accordion>
+
+  <Accordion title="What happens if I close BeeChat while sending a message?">
+    The transaction has already been sent to the network and will be confirmed regardless. When you reopen BeeChat, the message will appear normally after confirmation.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Privacy and Security
+
+<AccordionGroup>
+  <Accordion title="Can BeeSwarm read my messages?">
+    No. Messages are encrypted on your device before leaving. Neither BeeSwarm nor any server has access to the content. Only you and your contact can decrypt the messages.
+  </Accordion>
+
+  <Accordion title="Is my identity exposed on the blockchain?">
+    Your wallet address is visible — anyone can see that two addresses exchanged messages. Your real identity, however, is only exposed if your address is publicly associated with you in other contexts, such as KYC exchanges or social media.
+  </Accordion>
+
+  <Accordion title="Is it safe to use my main wallet in BeeChat?">
+    We do not recommend it. For maximum privacy and security, use a wallet dedicated exclusively to BeeChat, separate from your main wallet where you hold assets or make valuable transactions.
+  </Accordion>
+
+  <Accordion title="Can someone forge a message from me?">
+    No. Each message is a transaction signed with your private key. It is mathematically impossible to forge a valid signature without access to your private key.
+  </Accordion>
+
+  <Accordion title="Can quantum computing compromise my messages?">
+    There is no computer today capable of breaking the protection used by BeeChat — the same standards used by Signal, WhatsApp, and most of the internet. In the long term, advances in quantum computing represent a theoretical risk to current cryptographic standards as a whole. BeeChat will follow the industry and migrate to post-quantum standards when available. [Learn more](/en/beechat/privacy-and-security#on-quantum-computing).
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Costs
+
+<AccordionGroup>
+  <Accordion title="How much does it cost to send a message?">
+    The cost varies depending on BNB Smart Chain congestion. BeeChat always shows an updated estimate of the cost per message and how many messages your current balance supports.
+  </Accordion>
+
+  <Accordion title="Why do I need to pay to send messages?">
+    Each message is a blockchain transaction. The fee covers the cost of processing and permanently storing the transaction by BNB Smart Chain validators, plus a BeeChat protocol fee.
+  </Accordion>
+
+  <Accordion title="Does the initial registration have a cost?">
+    Yes. Registration on the contract is an on-chain transaction and requires a small BNB fee. It is a one-time operation — you will not need to repeat it.
+  </Accordion>
+
+  <Accordion title="Do I need BNB to use BeeChat?">
+    Yes. Both the initial registration and sending each message require BNB to cover transaction fees on BNB Smart Chain.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="I can't see my contact's messages. What could it be?">
+    Check if your contact is already registered in BeeChat. If they registered after you sent messages, they won't be able to read the earlier ones — and the same applies if your registration came after theirs. Also make sure you have a stable internet connection.
+  </Accordion>
+
+  <Accordion title="My message has had the ⏰ icon for a long time. What should I do?">
+    The ⏰ icon indicates the transaction is being propagated on the network. Under normal conditions, it disappears within seconds. If it persists for more than a few minutes, check your internet connection. The transaction will be confirmed once the network processes it — close and reopen the conversation to refresh.
+  </Accordion>
+
+  <Accordion title="I forgot to check if my contact was registered before sending. What happens?">
+    The message was sent and recorded on the blockchain. It will be visible to you in the conversation, but your contact won't be able to read it. You can send a new message after they register — that one they will be able to read normally.
+  </Accordion>
+</AccordionGroup>

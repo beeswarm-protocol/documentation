@@ -1,0 +1,120 @@
+---
+title: "Privacidad y seguridad"
+description: "Qué protege BeeChat, qué no protege, y cómo usarlo con responsabilidad."
+---
+
+BeeChat fue construido con la privacidad como principio central — no como funcionalidad adicional. Entender qué está protegido, qué es público y cuáles son los límites reales de esa protección es esencial para usar el chat con consciencia.
+
+---
+
+## Qué protege BeeChat
+
+- **El contenido de los mensajes** — cifrado de extremo a extremo en tu dispositivo antes de salir. Ni BeeSwarm, ni ningún servidor, ni nadie monitoreando la blockchain puede leer lo que escribiste
+- **Tu identidad criptográfica** — nunca almacenada, nunca transmitida. Existe solo durante el uso de BeeChat y es descartada al cerrar.
+- **Tu identidad real** — BeeChat no recopila nombre, correo electrónico, teléfono ni ningún dato personal. Tú eres tu dirección de billetera
+
+---
+
+## Qué es público en la blockchain
+
+Por ser un registro permanente y abierto, algunas informaciones son visibles para cualquier persona:
+
+- **Direcciones de las billeteras** que intercambiaron mensajes entre sí
+- **Fecha y hora** de cada mensaje enviado
+- **Cantidad de mensajes** intercambiados entre dos direcciones
+- El hecho de que dos direcciones **interactuaron** con el contrato de BeeChat
+
+Lo que no es visible es la identidad real detrás de cada dirección — eso depende de cómo gestiones tu billetera y tu presencia on-chain.
+
+<Warning>
+  Para preservar tu privacidad, recomendamos usar una billetera dedicada exclusivamente a BeeChat — separada de las billeteras que usas para otras finalidades financieras. Esta es una buena práctica general para cualquier herramienta de comunicación digital.
+</Warning>
+
+---
+
+## Usa una billetera dedicada
+
+<Warning>
+  Recomendamos firmemente que **no uses tu billetera principal** — aquella donde guardas tus activos, realizas transacciones de valor o que está asociada a tu identidad — para BeeChat.
+
+  Crea una billetera separada, exclusiva para comunicación. Esto protege tu privacidad y reduce riesgos en caso de cualquier exposición futura.
+</Warning>
+
+BeeSwarm permite crear y gestionar múltiples billeteras. [Mira cómo crear una nueva billetera](/es/primeros-pasos).
+
+---
+
+## Qué nunca enviar por BeeChat
+
+<Warning>
+  **Nunca envíes tu seed phrase o clave privada por BeeChat** — ni por ningún otro medio digital. Ningún soporte legítimo de BeeSwarm jamás solicitará esa información.
+
+  Incluso con cifrado de extremo a extremo, la regla fundamental de seguridad en criptomonedas se aplica: tu seed phrase y tu clave privada no deben existir en ningún entorno digital más allá de tu propio dispositivo.
+</Warning>
+
+Además, evita enviar por BeeChat:
+
+- Contraseñas de cualquier servicio
+- Datos bancarios o documentos personales
+- Información con la que no te sentirías cómodo si se hiciera pública en el futuro
+
+---
+
+## Los mensajes son permanentes
+
+Todo lo que envías por BeeChat queda grabado permanentemente en BNB Smart Chain. **No es posible eliminar, editar o revocar un mensaje después del envío.**
+
+Piensa bien antes de enviar — el registro es para siempre.
+
+---
+
+## Sobre computación cuántica
+
+La criptografía utilizada por BeeChat sigue los mismos estándares adoptados por Signal, WhatsApp, el protocolo TLS que protege toda internet, sistemas bancarios globales y agencias de seguridad gubernamentales de todo el mundo. No existe hoy ningún computador capaz de romper esa protección en tiempo hábil.
+
+Sin embargo, el avance de la computación cuántica representa un riesgo a largo plazo para los estándares criptográficos actuales — incluidos los usados por Signal, WhatsApp y la mayor parte de internet. Como los mensajes quedan grabados permanentemente en la blockchain, ese riesgo se aplica a BeeChat de la misma forma que se aplica a cualquier comunicación digital de hoy.
+
+Este no es un riesgo inmediato — estimaciones serias ubican ese horizonte en décadas — pero es real y vale la pena conocerlo.
+
+<Note>
+  La comunidad criptográfica global ya trabaja en algoritmos resistentes a la computación cuántica. La propia Ethereum está desarrollando medidas en esa dirección. Sigue los desarrollos en [ethereum.org](https://ethereum.org/en/roadmap/future-proofing) y en [NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography).
+</Note>
+
+BeeChat seguirá los estándares de la industria y migrará a algoritmos post-cuánticos cuando estos estén consolidados y disponibles.
+
+<Note>
+  Los mismos estándares de protección usados por BeeChat están ampliamente documentados y auditados por la comunidad global de seguridad. Para profundizar:
+  - [Protocolo Signal](https://signal.org/docs/) — documentación técnica de referencia en comunicación privada
+  - [Whitepaper de seguridad de WhatsApp](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf) — visión general de cifrado E2E a escala
+  - [TLS 1.3 — RFC 8446](https://www.rfc-editor.org/rfc/rfc8446) — estándar criptográfico que protege toda internet
+  - [NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography) — estándares post-cuánticos en desarrollo
+  - [Ethereum — Future Proofing](https://ethereum.org/en/roadmap/future-proofing) — cómo la red que sostiene BeeChat se está preparando para el futuro
+</Note>
+
+---
+
+## Uso responsable
+
+BeeChat es una herramienta de comunicación privada construida sobre infraestructura pública e inmutable. Con eso vienen responsabilidades:
+
+- Todas las interacciones son rastreables on-chain — direcciones, fechas y volúmenes de mensajes son públicos
+- Aunque el contenido esté cifrado, el patrón de comunicación entre direcciones es visible
+- BeeSwarm no tiene acceso al contenido de los mensajes y no puede intermediar disputas sobre lo que fue comunicado
+
+<Note>
+  BeeChat está destinado a conversaciones legítimas entre usuarios. El uso de la plataforma implica la aceptación de los [Términos de Uso](/es/terminos-de-uso) de BeeSwarm, en especial las secciones 3.6, 3.7 y 3.8, que tratan específicamente de BeeChat.
+</Note>
+
+---
+
+## Recomendaciones de seguridad
+
+| Recomendación | Por qué |
+|---|---|
+| Usa una billetera dedicada a BeeChat | Protege tu identidad y separa riesgos |
+| Activa la autenticación biométrica | Agiliza el acceso sin comprometer la seguridad |
+| Nunca envíes seed phrase o clave privada | Regla fundamental, sin excepciones |
+| Confirma la dirección del contacto antes de enviar | Los mensajes son permanentes e irreversibles |
+| No envíes contenido que no pueda ser público en el futuro | Los mensajes existen para siempre en la blockchain |
+
+[→ Ver las preguntas frecuentes](/es/beechat/faq)

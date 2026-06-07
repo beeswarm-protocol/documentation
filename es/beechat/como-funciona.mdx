@@ -1,0 +1,110 @@
+---
+title: "Cómo funciona"
+description: "Entiende cómo viajan y se protegen los mensajes de BeeChat."
+---
+
+BeeChat usa la blockchain de BNB Smart Chain como infraestructura de mensajes. No hay servidor de chat, no hay empresa almacenando lo que escribes — la base de datos es la propia red de miles de nodos distribuidos por el mundo que sostienen BNB Smart Chain.
+
+---
+
+## El camino de un mensaje
+
+Cuando envías un mensaje, ocurre lo siguiente:
+
+<Steps>
+  <Step title="Cifrado en el dispositivo">
+    El mensaje es cifrado directamente en tu dispositivo, antes de salir. Ninguna versión legible del mensaje viaja por internet.
+  </Step>
+  <Step title="Envío a la blockchain">
+    El mensaje cifrado es incorporado en una transacción y enviado a un contrato inteligente en BNB Smart Chain. Esta operación requiere una tarifa mínima de red (gas) en BNB, garantizando la autenticación de la transacción.
+  </Step>
+  <Step title="Registro permanente">
+    La transacción es confirmada por la red y grabada permanentemente en la blockchain. El contenido cifrado queda registrado para siempre — inmutable y público, pero ilegible para quien no tiene la clave.
+  </Step>
+  <Step title="Descifrado por el destinatario">
+    Cuando el destinatario abre la conversación, la app busca los mensajes en la blockchain y los descifra localmente, en su dispositivo. Ningún servidor ni siquiera BeeSwarm intermedia esta lectura.
+  </Step>
+</Steps>
+
+<img
+  src="https://media.beeswarm.app/pt-sending-message-beechat.gif"
+  alt="Cómo enviar un mensaje en BeeChat"
+  style={{ width: "43%" }}
+/>
+
+---
+
+## Cifrado de extremo a extremo
+
+BeeChat utiliza cifrado de extremo a extremo, siguiendo el estándar de seguridad de mensajeros como Signal y WhatsApp. La distinción técnica está en el almacenamiento: BeeChat no utiliza servidores corporativos centralizados. La información se registra en una red descentralizada (blockchain), transfiriendo el control del dato de la empresa al usuario final.
+
+De forma simplificada, funciona así:
+
+- Cada participante tiene una identidad criptográfica única, derivada de su propia billetera
+- Esa identidad está registrada en el contrato y puede ser usada por otros para enviar mensajes protegidos
+- Cuando Alice envía un mensaje a Bob, este es cifrado de forma que solo Bob puede leerlo
+- Aunque alguien acceda al mensaje en la blockchain, el contenido permanece ilegible sin la billetera de Bob
+
+Aunque alguien acceda al mensaje en la blockchain, el contenido permanece ilegible — la protección está garantizada por el propio protocolo. Solo los participantes de la conversación pueden leer lo que fue escrito.
+
+<Note>
+  El protocolo garantiza que cada mensaje puede ser releído por el remitente y el destinatario en cualquier momento — sin comprometer la privacidad de ninguno de los dos.
+</Note>
+
+---
+
+## Mensajes anteriores al registro
+
+<Warning>
+  Los mensajes enviados antes del registro del destinatario se perderán permanentemente en la Blockchain. Es imposible recuperarlos.
+  Para garantizar que tu contacto tenga acceso a los mensajes, asegúrate de que ya esté registrado en BeeChat antes de interactuar con él.
+</Warning>
+
+<img
+  src="https://media.beeswarm.app/pt-not-registred-user-beechat.png"
+  alt="Usuario no registrado en BeeChat"
+  style={{ width: "63%" }}
+/>
+
+---
+
+## Costo de los mensajes
+
+Cada mensaje enviado es una transacción en BNB Smart Chain. El costo se compone de:
+
+- **Tarifa de red (gas)** — pagada a los validadores de BNB Smart Chain por la inclusión de la transacción
+- **Tarifa de BeeChat** — una tarifa simbólica cobrada por el protocolo
+
+BeeChat siempre muestra una estimación del costo por mensaje y cuántos mensajes puede enviar con tu saldo actual, directamente en la pantalla del chat.
+
+<img
+  src="https://media.beeswarm.app/pt-gas-cost-beechat.png"
+  alt="Costo de mensajes en BeeChat"
+  style={{ width: "63%" }}
+/>
+
+<Note>
+  El costo varía según la congestión de la red. La estimación mostrada se calcula en tiempo real basándose en el precio actual del gas.
+</Note>
+
+---
+
+## Historial de mensajes
+
+Tus mensajes permanecen en la blockchain de forma permanente. BeeChat los busca bajo demanda, directamente de la red, cada vez que abres una conversación.
+
+No es necesario hacer copias de seguridad — mientras exista BNB Smart Chain, tus mensajes estarán ahí. Pero recuerda: son permanentes y no pueden ser eliminados.
+
+---
+
+## Verificación on-chain
+
+Cada interacción tiene un hash de transacción exclusivo. Al tocar el hash, eres dirigido directamente a BscScan para auditar el registro oficial e inmutable del mensaje en la blockchain.
+
+<img
+  src="https://media.beeswarm.app/pt-hash-preview-beechat.gif"
+  alt="Verificación on-chain en BeeChat"
+  style={{ width: "63%" }}
+/>
+
+[→ Mira cómo enviar tu primer mensaje](/es/beechat/enviando-mensajes)

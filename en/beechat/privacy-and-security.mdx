@@ -1,0 +1,120 @@
+---
+title: "Privacy and Security"
+description: "What BeeChat protects, what it doesn't, and how to use it responsibly."
+---
+
+BeeChat was built with privacy as its core principle — not as an additional feature. Understanding what is protected, what is public, and what the real limits of that protection are is essential for using the chat consciously.
+
+---
+
+## What BeeChat Protects
+
+- **Message content** — encrypted end-to-end on your device before leaving. Neither BeeSwarm, nor any server, nor anyone monitoring the blockchain can read what you wrote
+- **Your cryptographic identity** — never stored, never transmitted. It exists only during BeeChat use and is discarded when closed.
+- **Your real identity** — BeeChat does not collect your name, email, phone, or any personal data. You are your wallet address
+
+---
+
+## What Is Public on the Blockchain
+
+Being a permanent and open record, some information is visible to anyone:
+
+- **Wallet addresses** that exchanged messages with each other
+- **Date and time** of each message sent
+- **Number of messages** exchanged between two addresses
+- The fact that two addresses **interacted** with the BeeChat contract
+
+What is not visible is the real identity behind each address — that depends on how you manage your wallet and your on-chain presence.
+
+<Warning>
+  To preserve your privacy, we recommend using a wallet dedicated exclusively to BeeChat — separate from the wallets you use for other financial purposes. This is a general best practice for any digital communication tool.
+</Warning>
+
+---
+
+## Use a Dedicated Wallet
+
+<Warning>
+  We strongly recommend that you **do not use your main wallet** — the one where you hold assets, make valuable transactions, or that is associated with your identity — for BeeChat.
+
+  Create a separate wallet, exclusively for communication. This protects your privacy and reduces risks in the event of any future exposure.
+</Warning>
+
+BeeSwarm allows you to create and manage multiple wallets. [See how to create a new wallet](/en/getting-started).
+
+---
+
+## What Never to Send Through BeeChat
+
+<Warning>
+  **Never send your seed phrase or private key through BeeChat** — or through any other digital medium. No legitimate BeeSwarm support will ever ask for this information.
+
+  Even with end-to-end encryption, the fundamental rule of cryptocurrency security applies: your seed phrase and private key should not exist in any digital environment beyond your own device.
+</Warning>
+
+Additionally, avoid sending through BeeChat:
+
+- Passwords for any service
+- Banking data or personal documents
+- Information you would not be comfortable seeing made public in the future
+
+---
+
+## Messages Are Permanent
+
+Everything you send through BeeChat is permanently recorded on BNB Smart Chain. **It is not possible to delete, edit, or revoke a message after sending.**
+
+Think carefully before sending — the record is forever.
+
+---
+
+## On Quantum Computing
+
+The encryption used by BeeChat follows the same standards adopted by Signal, WhatsApp, the TLS protocol that protects the entire internet, global banking systems, and government security agencies around the world. There is no computer today capable of breaking this protection in any reasonable time.
+
+However, advances in quantum computing represent a long-term risk to current cryptographic standards — including those used by Signal, WhatsApp, and most of the internet. Since messages are permanently recorded on the blockchain, this risk applies to BeeChat in the same way it applies to any digital communication today.
+
+This is not an immediate risk — serious estimates place this horizon decades away — but it is real and worth knowing.
+
+<Note>
+  The global cryptographic community is already working on quantum-resistant algorithms. Ethereum itself is developing measures in this direction. Follow the developments at [ethereum.org](https://ethereum.org/en/roadmap/future-proofing) and [NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography).
+</Note>
+
+BeeChat will follow industry standards and migrate to post-quantum algorithms when they are consolidated and available.
+
+<Note>
+  The same protection standards used by BeeChat are widely documented and audited by the global security community. To learn more:
+  - [Signal Protocol](https://signal.org/docs/) — technical reference documentation for private communication
+  - [WhatsApp Security Whitepaper](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf) — overview of E2E encryption at scale
+  - [TLS 1.3 — RFC 8446](https://www.rfc-editor.org/rfc/rfc8446) — cryptographic standard that protects the entire internet
+  - [NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography) — post-quantum standards in development
+  - [Ethereum — Future Proofing](https://ethereum.org/en/roadmap/future-proofing) — how the network that sustains BeeChat is preparing for the future
+</Note>
+
+---
+
+## Responsible Use
+
+BeeChat is a private communication tool built on public and immutable infrastructure. With that come responsibilities:
+
+- All interactions are traceable on-chain — addresses, dates, and message volumes are public
+- Although content is encrypted, the communication pattern between addresses is visible
+- BeeSwarm has no access to message content and cannot mediate disputes about what was said
+
+<Note>
+  BeeChat is intended for legitimate conversations between users. Use of the platform implies agreement with BeeSwarm's [Terms of Use](/en/terms-of-use), especially sections 3.6, 3.7, and 3.8, which specifically address BeeChat.
+</Note>
+
+---
+
+## Security Recommendations
+
+| Recommendation | Why |
+|---|---|
+| Use a dedicated wallet for BeeChat | Protects your identity and separates risks |
+| Enable biometric authentication | Speeds up access without compromising security |
+| Never send seed phrase or private key | Fundamental rule, no exceptions |
+| Confirm the contact's address before sending | Messages are permanent and irreversible |
+| Do not send content that cannot be public in the future | Messages exist forever on the blockchain |
+
+[→ See the frequently asked questions](/en/beechat/faq)

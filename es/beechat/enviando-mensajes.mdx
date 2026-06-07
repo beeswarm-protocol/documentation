@@ -1,0 +1,184 @@
+---
+title: "Enviando mensajes"
+description: "Cómo iniciar una conversación y enviar mensajes en BeeChat."
+---
+
+Para enviar un mensaje en BeeChat, necesitas la dirección de la billetera de tu contacto. No hay búsqueda por nombre, número de teléfono o correo electrónico — la identidad en BeeChat es la dirección de la billetera.
+
+---
+
+## Iniciando una nueva conversación
+
+<Steps>
+  <Step title="Pega la dirección de la billetera">
+    En la pantalla principal de BeeChat, localiza el campo de dirección y pega la dirección de la billetera con quien deseas conversar. La dirección será validada automáticamente.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v1.png"
+      alt="Pegar dirección en BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>
+      Las direcciones de billetera siempre comienzan con `0x` y tienen 42 caracteres. Asegúrate de copiar la dirección completa y correcta — una vez enviado, el mensaje no puede ser eliminado.
+    </Note>
+  </Step>
+
+  <Step title="Toca el ícono de chat">
+    Después de pegar la dirección, toca el ícono de chat junto al campo para abrir la conversación.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v2.png"
+      alt="Abrir conversación en BeeChat"
+      style={{ width: "63%" }}
+    />
+  </Step>
+
+  <Step title="Verifica los avisos">
+    Antes de enviar, BeeChat puede mostrar avisos importantes:
+
+    **Primer mensaje** — si aún no has intercambiado mensajes con esta dirección, la conversación aparecerá vacía con un mensaje de bienvenida.
+
+    <img
+      src="https://media.beeswarm.app/pt-first-message-beechat.png"
+      alt="Primera mensaje en BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    **Contacto no registrado** — si la dirección aún no se ha registrado en BeeChat, verás un aviso. Puedes enviar el mensaje, pero no podrá leerlo hasta que se registre. E incluso después del registro, los mensajes anteriores permanecerán ilegibles para él.
+
+    <img
+      src="https://media.beeswarm.app/pt-not-registred-user-beechat-v2.png"
+      alt="Contacto no registrado en BeeChat"
+      style={{ width: "63%" }}
+    />
+
+  </Step>
+</Steps>
+
+---
+
+## Enviando un mensaje
+
+<Steps>
+  <Step title="Escribe tu mensaje">
+    Con la conversación abierta, escribe tu mensaje en el campo de texto en la parte inferior de la pantalla. El campo se expande automáticamente conforme escribes.
+
+    <img
+      src="https://media.beeswarm.app/pt-typing-process.gif"
+      alt="Escribiendo en BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>
+      BeeChat solo admite contenido textual.
+    </Note>
+  </Step>
+
+  <Step title="Confirma el envío">
+    Al tocar enviar o presionar Enter, se mostrará una pantalla de confirmación con:
+
+    - A -> Dirección de origen (tú) y destino (tu contacto)
+    - B -> Vista previa del mensaje
+    - C -> Estimación del costo en BNB
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-info-beechat.png"
+      alt="Confirmando envío en BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    Revisa la información y toca **Enviar** para continuar.
+  </Step>
+
+  <Step title="Autentícate">
+    Para firmar la transacción, deberás confirmar con tu contraseña o biometría.
+
+    <img
+      src="https://media.beeswarm.app/pt-password-confirm-beechat.png"
+      alt="Autenticación en BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    <Tip>
+      Con la biometría activada, este paso es rápido — basta usar Face ID o huella digital. [Mira cómo activarla](/es/biometria).
+    </Tip>
+  </Step>
+
+  <Step title="Espera la confirmación">
+    Después de autenticarte, tu mensaje aparecerá inmediatamente en la conversación con un ícono ⏰, indicando que se está propagando en la red blockchain.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-msg-beechat-v2.png"
+      alt="Mensaje siendo confirmado en BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    Una vez que la transacción sea confirmada por BNB Smart Chain — generalmente en unos segundos — el ícono es reemplazado por el mensaje definitivo con horario y hash de la transacción.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirmed-msg-beechat-v2.png"
+      alt="Mensaje confirmado en BeeChat"
+      style={{ width: "73%" }}
+    />
+
+  </Step>
+</Steps>
+
+---
+
+## Información de cada mensaje
+
+Debajo de cada mensaje enviado o recibido, encontrarás:
+
+**Horario** — muestra la hora de envío. Toca para expandir y ver la fecha y hora completas, incluyendo zona horaria.
+
+<img
+  src="https://media.beeswarm.app/pt-data-msg-clicking-beechat-v3.gif"
+  alt="Hora del mensaje en BeeChat"
+  style={{ width: "73%" }}
+/>
+
+**Hash de la transacción** — identificador único del mensaje en la blockchain. Toca para abrir en BscScan y verificar el registro on-chain directamente en el navegador.
+
+<img
+  src="https://media.beeswarm.app/pt-hash-msg-indicator-beechat.png"
+  alt="Hash del mensaje en BeeChat"
+  style={{ width: "73%" }}
+/>
+
+---
+
+## Tus conversaciones
+
+En la pantalla principal de BeeChat, encontrarás la lista de todas las billeteras con las que ya has intercambiado mensajes, ordenadas por la interacción más reciente.
+
+<img
+  src="https://media.beeswarm.app/pt-start-screen-beechat.png"
+  alt="Pantalla principal de BeeChat"
+  style={{ width: "53%" }}
+/>
+
+Toca cualquier conversación para abrirla y ver el historial completo de mensajes.
+
+---
+
+## Saldo y estimación de mensajes
+
+En la parte superior de BeeChat, siempre encontrarás:
+
+- A -> Cuántos mensajes puedes enviar aún con ese saldo (estimación)
+- B -> Tu saldo actual en BNB
+- C -> Costo promedio estimado por mensaje
+
+<img
+  src="https://media.beeswarm.app/pt-header-info-beechat-v2.png"
+  alt="Saldo y estimación en BeeChat"
+  style={{ width: "73%" }}
+/>
+
+<Note>
+  La estimación se calcula en tiempo real basándose en el precio actual del gas en BNB Smart Chain. Puede variar según la congestión de la red.
+</Note>
+
+[→ Entiende cómo se protege tu privacidad](/es/beechat/privacidad-y-seguridad)

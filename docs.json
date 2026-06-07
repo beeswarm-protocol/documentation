@@ -109,6 +109,19 @@
             ]
           },
           {
+            "group": "BeeChat",
+            "icon": "message-dots",
+            "pages": [
+              "es/beechat/introduccion",
+              "es/beechat/primeros-pasos",
+              "es/beechat/como-funciona",
+              "es/beechat/enviando-mensajes",
+              "es/beechat/privacidad-y-seguridad",
+              "es/beechat/casos-de-uso",
+              "es/beechat/faq"
+            ]
+          },
+          {
             "group": "Swarm",
             "icon": "honey-pot",
             "pages": [
@@ -158,6 +171,19 @@
                   "en/features/wallet-connect"
                 ]
               }
+            ]
+          },
+          {
+            "group": "BeeChat",
+            "icon": "message-dots",
+            "pages": [
+              "en/beechat/introduction",
+              "en/beechat/getting-started",
+              "en/beechat/how-it-works",
+              "en/beechat/sending-messages",
+              "en/beechat/privacy-and-security",
+              "en/beechat/use-cases",
+              "en/beechat/faq"
             ]
           },
           {

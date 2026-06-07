@@ -1,0 +1,184 @@
+---
+title: "Sending Messages"
+description: "How to start a conversation and send messages in BeeChat."
+---
+
+To send a message in BeeChat, you need your contact's wallet address. There is no search by name, phone number, or email — identity in BeeChat is the wallet address.
+
+---
+
+## Starting a New Conversation
+
+<Steps>
+  <Step title="Paste the wallet address">
+    On the main BeeChat screen, locate the address field and paste the wallet address of the person you want to talk to. The address will be validated automatically.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v1.png"
+      alt="Pasting address in BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>
+      Wallet addresses always start with `0x` and have 42 characters. Make sure to copy the complete and correct address — once sent, the message cannot be deleted.
+    </Note>
+  </Step>
+
+  <Step title="Tap the chat icon">
+    After pasting the address, tap the chat icon next to the field to open the conversation.
+
+    <img
+      src="https://media.beeswarm.app/pt-paste-address-beechat-v2.png"
+      alt="Opening conversation in BeeChat"
+      style={{ width: "63%" }}
+    />
+  </Step>
+
+  <Step title="Check the warnings">
+    Before sending, BeeChat may display important notices:
+
+    **First message** — if you have not yet exchanged messages with this address, the conversation will appear empty with a welcome message.
+
+    <img
+      src="https://media.beeswarm.app/pt-first-message-beechat.png"
+      alt="First message in BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    **Unregistered contact** — if the address has not yet registered in BeeChat, you will see a warning. You can send the message, but they will not be able to read it until they register. And even after registering, previous messages will remain unreadable for them.
+
+    <img
+      src="https://media.beeswarm.app/pt-not-registred-user-beechat-v2.png"
+      alt="Unregistered contact in BeeChat"
+      style={{ width: "63%" }}
+    />
+
+  </Step>
+</Steps>
+
+---
+
+## Sending a Message
+
+<Steps>
+  <Step title="Type your message">
+    With the conversation open, type your message in the text field at the bottom of the screen. The field expands automatically as you type.
+
+    <img
+      src="https://media.beeswarm.app/pt-typing-process.gif"
+      alt="Typing in BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    <Note>
+      BeeChat only supports text content.
+    </Note>
+  </Step>
+
+  <Step title="Confirm the send">
+    When you tap send or press Enter, a confirmation screen will appear with:
+
+    - A -> Origin address (you) and destination (your contact)
+    - B -> Message preview
+    - C -> Estimated cost in BNB
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-info-beechat.png"
+      alt="Confirming send in BeeChat"
+      style={{ width: "63%" }}
+    />
+
+    Review the information and tap **Send** to proceed.
+  </Step>
+
+  <Step title="Authenticate">
+    To sign the transaction, you will need to confirm with your password or biometrics.
+
+    <img
+      src="https://media.beeswarm.app/pt-password-confirm-beechat.png"
+      alt="Authentication in BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    <Tip>
+      With biometrics enabled, this step is quick — just use Face ID or fingerprint. [See how to enable it](/en/biometrics).
+    </Tip>
+  </Step>
+
+  <Step title="Wait for confirmation">
+    After authenticating, your message will appear immediately in the conversation with a ⏰ icon, indicating it is being propagated on the blockchain network.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirming-msg-beechat-v2.png"
+      alt="Message being confirmed in BeeChat"
+      style={{ width: "73%" }}
+    />
+
+    Once the transaction is confirmed by BNB Smart Chain — usually within a few seconds — the icon is replaced by the final message with the time and transaction hash.
+
+    <img
+      src="https://media.beeswarm.app/pt-confirmed-msg-beechat-v2.png"
+      alt="Confirmed message in BeeChat"
+      style={{ width: "73%" }}
+    />
+
+  </Step>
+</Steps>
+
+---
+
+## Message Information
+
+Below each sent or received message, you will find:
+
+**Time** — displays the time of sending. Tap to expand and see the full date and time, including time zone.
+
+<img
+  src="https://media.beeswarm.app/pt-data-msg-clicking-beechat-v3.gif"
+  alt="Message time in BeeChat"
+  style={{ width: "73%" }}
+/>
+
+**Transaction hash** — unique identifier of the message on the blockchain. Tap to open in BscScan and verify the on-chain record directly in the browser.
+
+<img
+  src="https://media.beeswarm.app/pt-hash-msg-indicator-beechat.png"
+  alt="Transaction hash in BeeChat"
+  style={{ width: "73%" }}
+/>
+
+---
+
+## Your Conversations
+
+On the main BeeChat screen, you will find the list of all wallets you have exchanged messages with, ordered by the most recent interaction.
+
+<img
+  src="https://media.beeswarm.app/pt-start-screen-beechat.png"
+  alt="BeeChat main screen"
+  style={{ width: "53%" }}
+/>
+
+Tap any conversation to open it and see the full message history.
+
+---
+
+## Balance and Message Estimate
+
+At the top of BeeChat, you will always find:
+
+- A -> How many messages you can still send with your current balance (estimate)
+- B -> Your current BNB balance
+- C -> Estimated average cost per message
+
+<img
+  src="https://media.beeswarm.app/pt-header-info-beechat-v2.png"
+  alt="Balance and estimate in BeeChat"
+  style={{ width: "73%" }}
+/>
+
+<Note>
+  The estimate is calculated in real time based on the current gas price on BNB Smart Chain. It may vary depending on network congestion.
+</Note>
+
+[→ Understand how your privacy is protected](/en/beechat/privacy-and-security)
