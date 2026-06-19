@@ -1,18 +1,153 @@
 ---
 title: "Wallet Connect"
-description: "Como conectar a BeeSwarm com aplicações descentralizadas via WalletConnect."
+description: "Conecte a BeeSwarm a qualquer aplicação descentralizada com segurança e em segundos."
 ---
 
-🔗 A BeeSwarm suporta WalletConnect, o protocolo padrão para conectar carteiras a aplicações descentralizadas como PancakeSwap, Uniswap e outras plataformas DeFi.
+<img src="https://media.beeswarm.app/pt-wallet-connect-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '100%' }} />
 
-🔍 A BeeSwarm está listada oficialmente no WalletConnect. Em qualquer dApp que suporte o protocolo, basta pesquisar por "BeeSwarm" na lista de carteiras para encontrá-la.
+## O que é o WalletConnect?
 
-📱 Dentro do app, o módulo WalletConnect oferece três opções:
+O WalletConnect é o protocolo padrão da indústria para conectar carteiras cripto a aplicações descentralizadas (dApps). Diferente de extensões de navegador que exigem instalação no computador, o WalletConnect funciona diretamente do celular — você aprova tudo pela sua carteira, com sua chave privada, sem precisar confiar em intermediários.
 
-- **Scanner** — escaneie o QR code exibido pelo dApp para conectar instantaneamente.
-- **Conexão via link** — copie o URI gerado pelo dApp e cole diretamente na BeeSwarm. Útil para conectar a partir do mesmo dispositivo, sem precisar escanear. O fluxo é idêntico ao de uma extensão de carteira no computador: browser aberto com o dApp em uma aba, BeeSwarm em outra.
-- **Sessões ativas** — visualize todas as conexões abertas e desconecte quando quiser. A desconexão também pode ser feita pelo próprio dApp.
+O protocolo cria um canal seguro e criptografado entre sua carteira e o dApp. Nenhuma chave privada trafega pela conexão — apenas as aprovações que você autoriza explicitamente.
 
-✅ Após conectar, todas as solicitações do dApp — assinar mensagens, confirmar transações, autorizar gastos — aparecem na BeeSwarm para você revisar antes de aprovar ou rejeitar.
+Hoje, o WalletConnect é suportado por milhares de plataformas: exchanges descentralizadas como PancakeSwap e Uniswap, protocolos de lending como Aave e Venus, marketplaces de NFT como OpenSea, plataformas de staking, yield farming, perps e muito mais. É a forma padrão do ecossistema DeFi de conectar carteiras móveis a qualquer aplicação on-chain.
 
-🛡️ Nenhuma ação é aprovada automaticamente. Você tem controle total sobre o que autoriza. 
+---
+
+## BeeSwarm no WalletConnect
+
+<img src="https://media.beeswarm.app/pt-bee-and-wc-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '63%' }} />
+
+A BeeSwarm está **listada oficialmente no WalletConnect** — o diretório público de carteiras compatíveis com o protocolo.
+
+Isso não é automático. Para aparecer no diretório, a carteira passa por um processo de validação técnica conduzido pela equipe do WalletConnect. Estar listada significa que a BeeSwarm atende aos padrões de segurança, compatibilidade e experiência do protocolo — e que qualquer usuário de dApp ao redor do mundo pode encontrá-la diretamente na lista de carteiras suportadas.
+
+Na prática, isso significa que em qualquer dApp que suporte WalletConnect — seja no celular ou no computador — você pode pesquisar por **"BeeSwarm"** e conectar diretamente, sem extensão de navegador, sem instalar nada adicional, sem depender de carteiras de terceiros.
+
+> 🔗 [Ver BeeSwarm no WalletConnect](https://walletguide.walletconnect.network/?search=BeeSwarm)
+
+---
+
+## Como acessar o WalletConnect na BeeSwarm
+
+Na tela da carteira, toque no ícone de **camadas** (entre os botões Enviar e Receber) para abrir o menu **Ferramentas**. Em seguida, toque em **Wallet Connect**.
+
+<img src="https://media.beeswarm.app/pt-find-wc.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+O módulo oferece três opções: **Conexão via link**, **Sessões ativas** e **Scanner**.
+
+<img src="https://media.beeswarm.app/pt-wc-options.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '53%' }} />
+
+---
+
+## Conexão via link (URI)
+
+Use quando o dApp e a BeeSwarm estiverem no **mesmo dispositivo** — sem precisar escanear nada.
+
+> 💡 Alguns dApps exibem o link URI automaticamente abaixo do QR code. Outros exigem que você clique em um botão para copiá-lo. O comportamento varia por plataforma.
+
+**Como conectar:**
+
+1. Abra o dApp que deseja conectar à BeeSwarm no navegador
+2. Procure o botão **"Connect Wallet"** — geralmente no canto superior direito da página
+3. Se o dApp suportar WalletConnect, ele aparecerá como uma das opções de carteira; selecione-o
+4. Um QR code será exibido na tela
+5. Abaixo do QR code, toque em **"Copy link"** (ou similar) para copiar o link URI gerado
+6. Alterne para a BeeSwarm e toque em **Conexão via link**
+7. Cole o link no campo — ele ficará **verde** se for válido, **vermelho** se inválido
+8. Toque em **Conectar**
+9. Um popup de conexão será exibido com duas opções:
+   - **Rejeitar** — a conexão é cancelada; volte ao dApp e gere um novo link URI
+   - **Aprovar** — conexão estabelecida com sucesso
+10. Após aprovar, volte ao navegador com o dApp — a conexão já está ativa
+
+**EXEMPLO: conectando com a OpenSea** 🛳️
+
+<img src="https://media.beeswarm.app/pt-connecting-uri-beeswarm.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '100%' }} />
+
+---
+
+### No celular
+
+Como a BeeSwarm é instalada como um app independente, o dApp será acessado em um navegador separado (Safari, Chrome ou outro). Alterne entre os dois apps conforme os passos acima.
+
+<img src="https://media.beeswarm.app/pt-connecting-uri-mobile-beeswarm.gif" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+### No desktop
+
+O fluxo é idêntico. No desktop você pode usar o **split screen** do navegador para deixar o dApp e a BeeSwarm lado a lado — o que facilita alternar entre os dois passos sem precisar trocar de aba.
+
+{/* 📸 GIF: Split screen — dApp e BeeSwarm lado a lado */}
+
+---
+
+### Quando o dApp exige assinatura após a conexão
+
+Algumas plataformas exigem dois passos seguidos: **conectar** e depois **assinar uma mensagem de entrada**. Nesses casos:
+
+1. Cole o link URI e toque em **Conectar**
+<img src="https://media.beeswarm.app/pt-uri-link-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+2. Aprove a conexão na BeeSwarm
+<img src="https://media.beeswarm.app/pt-approve-request-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+3. Um aviso **"Volte ao dApp para continuar"** será exibido
+
+<img src="https://media.beeswarm.app/pt-back-to-dapp-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '43%' }} />
+
+4. Volte ao dApp — ele estará aguardando uma assinatura
+
+5. Alterne novamente para a BeeSwarm — um popup de assinatura estará esperando
+6. Assine com sua carteira
+7. Volte ao dApp para finalizar o fluxo de conexão
+
+> 💡 Nem todos os dApps pedem assinatura. Mas quando pedem, você precisará alternar entre a BeeSwarm e o navegador duas vezes: uma para aprovar a conexão e outra para assinar.
+
+{/* 📸 GIF: Fluxo completo com assinatura — conectar → voltar ao dApp → assinar → voltar ao dApp */}
+
+---
+
+## Conectando via Scanner (QR Code)
+
+Use quando estiver acessando o dApp em **outro dispositivo** — como um computador.
+
+<img src="https://media.beeswarm.app/pt-wc-scanner-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '100%' }} />
+
+**Como fazer:**
+
+1. Abra o dApp no computador (ex: OpenSea, Uniswap etc.)
+2. Clique em **"Connect Wallet"** e selecione **WalletConnect**
+3. O dApp exibirá um QR code na tela
+4. Na BeeSwarm, toque em **Scanner** e aponte a câmera para o QR code
+5. Revise a solicitação de conexão e confirme
+
+<img src="https://media.beeswarm.app/pt-scanner-highlight-beeswarm-v2.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '45%' }} />
+
+---
+
+## Sessões ativas
+
+Após conectar, a sessão permanece aberta até que você ou o dApp a encerrem. Em **Sessões ativas**, você visualiza todas as conexões abertas — com nome do dApp e rede utilizada.
+<img src="https://media.beeswarm.app/pt-active-sessions-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '55%' }} />
+
+**Para desconectar:**
+
+- Na BeeSwarm: toque na sessão desejada e selecione **Desconectar**
+- Pelo próprio dApp: a maioria oferece um botão de desconexão na interface de conta
+
+<img src="https://media.beeswarm.app/pt-active-conections-wc-beeswarm.png" alt="Swap BeeSwarm" style={{ borderRadius: '12px', width: '55%' }} />
+
+> 💡 É boa prática encerrar sessões que não estão mais em uso, especialmente em dApps que você acessa esporadicamente.
+
+---
+
+## Aprovando ações do dApp
+
+Toda solicitação enviada pelo dApp — assinar mensagens, confirmar transações, autorizar gastos de tokens — aparece na BeeSwarm para você revisar **antes de aprovar ou rejeitar**.
+
+Nenhuma ação é executada automaticamente. Você tem controle total sobre o que autoriza.
+
+{/* 📸 IMAGEM: Modal de confirmação de transação exibido pela BeeSwarm */}
+
+> ⚠️ Sempre leia o que está sendo solicitado antes de aprovar. Solicitações de assinatura de dApps desconhecidos podem ser tentativas de phishing.
