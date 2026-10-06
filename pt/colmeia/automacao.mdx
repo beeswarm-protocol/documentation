@@ -1,0 +1,24 @@
+---
+title: "Automação"
+description: "Como funciona a automação de compras de BEE a cada hora"
+---
+
+# Automação
+
+A cada hora, o contrato executa a compra de Bee nas carteiras de todas as abelhas operárias que autorizaram as microcompras. A porcentagem comprada por ciclo é dinâmica e está visível na aba da Colmeia dentro do app — não há um valor fixo por hora.
+
+Saem USDTs e entram BEEs.
+
+## Regras da autorização
+
+- A autorização é totalmente livre. Você define, altera ou zera quando quiser.
+- O contrato **não retém seus fundos.** Ao autorizar a compra de Bee, você disponibiliza o USDT que será trocado pelo valor referente em Bee de hora em hora e a quantidade de token em BEE pode ser trocada por USDT ou outro token, ou ser transferida para outra carteira a qualquer momento.
+- Não é possível autorizar mais do que o saldo disponível de USDT na carteira.
+- Mesmo autorizando 100 USDT, você pode movê-los para outra carteira ou trocá-los via swap a qualquer momento — a automação simplesmente para quando não há saldo.
+
+## Como desativar a automação
+
+Para interromper as compras automáticas, basta uma das opções abaixo:
+- Zerar a autorização de gastos diretamente no app
+- Mover os USDT para outra carteira
+- Trocar os USDT por outro token via swap

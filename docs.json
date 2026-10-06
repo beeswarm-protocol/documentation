@@ -19,6 +19,14 @@
             ]
           },
           {
+            "group": "Sobre Nós",
+            "icon": "building",
+            "pages": [
+              "pt/sobre-nos/tolvai",
+              "pt/sobre-nos/nossa-historia"
+            ]
+          },
+          {
             "group": "Carteira",
             "icon": "wallet",
             "pages": [
@@ -57,10 +65,17 @@
             ]
           },
           {
-            "group": "Swarm",
+            "group": "Colmeia",
             "icon": "honey-pot",
             "pages": [
-              "pt/soon"
+              "pt/colmeia/introducao",
+              "pt/colmeia/como-entrar",
+              "pt/colmeia/automacao",
+              "pt/colmeia/taxas-e-recompensas",
+              "pt/colmeia/a-colmeia",
+              "pt/colmeia/painel",
+              "pt/colmeia/nft-de-bonus",
+              "pt/colmeia/transferencia-nft"
             ]
           },
           {
@@ -81,6 +96,14 @@
             "icon": "book-open-cover",
             "pages": [
               "es/introducao"
+            ]
+          },
+          {
+            "group": "Sobre Nosotros",
+            "icon": "building",
+            "pages": [
+              "es/sobre-nosotros/tolvai",
+              "es/sobre-nosotros/nuestra-historia"
             ]
           },
           {
@@ -122,10 +145,16 @@
             ]
           },
           {
-            "group": "Swarm",
+            "group": "Colmena",
             "icon": "honey-pot",
             "pages": [
-              "es/soon"
+              "es/colmena/introduccion",
+              "es/colmena/como-entrar",
+              "es/colmena/automacion",
+              "es/colmena/tasas-y-recompensas",
+              "es/colmena/panel",
+              "es/colmena/nft-de-bonus",
+              "es/colmena/transferencia-nft"
             ]
           },
           {
@@ -146,6 +175,14 @@
             "icon": "book-open-cover",
             "pages": [
               "en/introducao"
+            ]
+          },
+          {
+            "group": "About",
+            "icon": "building",
+            "pages": [
+              "en/about-us/tolvai",
+              "en/about-us/our-history"
             ]
           },
           {
@@ -190,7 +227,14 @@
             "group": "Swarm",
             "icon": "honey-pot",
             "pages": [
-              "en/soon"
+              "en/hive/introduction",
+              "en/hive/how-to-join",
+              "en/hive/automation",
+              "en/hive/fees-and-rewards",
+              "en/hive/hive",
+              "en/hive/dashboard",
+              "en/hive/bonus-nft",
+              "en/hive/nft-transfer"
             ]
           },
           {

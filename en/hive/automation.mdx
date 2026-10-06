@@ -1,0 +1,25 @@
+---
+title: "Automation"
+description: "How hourly BEE purchase automation works"
+---
+
+# Automation
+
+Every hour, the contract executes BEE purchases in the wallets of all worker bees that have authorized micro-purchases. The percentage purchased per cycle is dynamic and is displayed in the Hive tab within the app — there is no fixed amount per hour.
+
+USDT goes out and BEE comes in.
+
+## Authorization rules
+
+- Authorization is completely flexible. You can set, change, or reset it to zero whenever you want.
+- The contract **does not hold your funds.** By authorizing BEE purchases, you make USDT available to be exchanged hourly for the corresponding amount of BEE. Your BEE tokens can be swapped back to USDT or another token, or transferred to another wallet at any time.
+- You cannot authorize more than the available USDT balance in your wallet.
+- Even if you authorize 100 USDT, you can move it to another wallet or swap it at any time — the automation simply stops when there is no available balance.
+
+## How to disable automation
+
+To stop automatic purchases, simply use one of the options below:
+
+- Set the spending authorization to zero directly in the app
+- Move the USDT to another wallet
+- Swap the USDT for another token
