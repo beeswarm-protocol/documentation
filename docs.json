@@ -15,7 +15,8 @@
             "group": "Visão Geral",
             "icon": "book-open-cover",
             "pages": [
-              "pt/introducao"
+              "pt/introducao",
+              "pt/o-que-somos"
             ]
           },
           {
@@ -95,7 +96,8 @@
             "group": "Visión General",
             "icon": "book-open-cover",
             "pages": [
-              "es/introducao"
+              "es/introducao",
+              "es/lo-que-somos"
             ]
           },
           {
@@ -174,7 +176,8 @@
             "group": "Overview",
             "icon": "book-open-cover",
             "pages": [
-              "en/introducao"
+              "en/introducao",
+              "en/what-we-are"
             ]
           },
           {
